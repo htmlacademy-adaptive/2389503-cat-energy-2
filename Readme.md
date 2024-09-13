@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Макс Доронин](https://up.htmlacademy.ru/adaptive-individual/2/user/2389503).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
