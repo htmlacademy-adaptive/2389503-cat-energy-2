@@ -12,25 +12,29 @@
 <body class="page__body">
   <header class="page__header header">
     <nav class="header__navigation navigation">
-      <a class="header__logo logo-mobile" href="#">
-        <img src="" alt="Логотип сайта Кэт Энерджи">
+      <a class="header__logo logo" href="#">
+        <img class="logo__mobile" src="" width="" height="" alt="Логотип сайта Кэт Энерджи">
       </a>
       <a class="logo-text" href="#">
         <img src="" alt="Логотип с текстом 'CAT ENERGY'">
       </a>
-      <button class="button"></button>
+      <button class="button">
+        <span class="visually-hidden">Расскрытие главного меню</span>
+      </button>
+      <ul class="main-navigation navigation">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">подбор программы</a>
+        </li>
+      </ul>
+      </ul>
     </nav>
-    <ul class="main-navigation navigation">
-      <li class="navigation__item">
-        <a class="navigation__link" href="#">главная</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="#">каталог продукции</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="#">подбор программы</a>
-      </li>
-    </ul>
+
   </header>
   <main class="page__main">
     <section class="page__promo promo">
