@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keywords" content="функциональное питание для котов, CAT Energy, здоровое питание для кошек, питание для активных котов, корм для поддержания веса котов, витамины для кошек, магазин кошачьего корма, сбалансированный корм для котов">
   <meta name="description" content="Интернет-магазин CAT Energy предлагает функциональное питание для котов. У нас вы найдете сбалансированные корма, которые поддерживают активность и здоровье вашего питомца. Подберите идеальный рацион для вашей кошки.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <title>CAT ENERGY: интернет магазин питания для котов</title>
   <script src="scripts/index.js" defer></script>
@@ -45,7 +49,11 @@
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__lead">Занялся собой? Займись котом!</p>
       </div>
-      <img class="promo__image" src="/" width="100" height="100" alt="">
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can@1x.png 1x, images/index-can@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet-1@1x.png 1x, images/index-can-tablet-1@2x.png 2x">
+        <img class="promo__image" src="images/index-can-mobile-1@1x.png" srcset="images/index-can-mobile-1@2x.png 2x" width="100" height="100" alt="">
+      </picture>
       <a class="promo__link button" href="#">Подобрать программу</a>
     </section>
     <section class="page__programms programms">
@@ -98,8 +106,15 @@
       </div>
       <div class="example__slider slider">
         <div class="slider__wrapper">
-          <img class="slider__image" src="/" width="100" height="100" alt="Стройный кот">
-          <img class="slider__image" src="/" width="100" height="100" alt="Жирный кот">
+          <picture>
+            <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+            <img class="slider__image" src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" width="280" height="256" alt="Жирный кот">
+          </picture>
+          <picture>
+            <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+            <img class="slider__image" src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" width="280" height="256" alt="Стройный кот">
+          </picture>
+
           <button class="slider__button" type="button">
             <span class="visually-hidden">Ползунок</span>
           </button>
