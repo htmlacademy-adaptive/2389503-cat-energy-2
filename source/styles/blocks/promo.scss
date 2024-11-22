@@ -1,9 +1,12 @@
 .promo {
-
+  font-family: $secondary-font;
+  color: #000000;
+  background-color: rgba(104, 183, 56, 0.85);
 }
 
 .promo__title {
-
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .promo__lead {
