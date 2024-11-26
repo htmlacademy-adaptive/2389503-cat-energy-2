@@ -1,3 +1,31 @@
 .product-card {
 
 }
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.product-card__desc {
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-special-dark-grey;
+}
+
+.product-card--all .product-card__title {
+  color: #111111;
+}
+
+.product-card--all .product-card__button {
+  background-color: $bg-basic-grey;
+  color: $text-special-dark-grey;
+}
