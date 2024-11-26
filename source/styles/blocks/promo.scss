@@ -1,7 +1,7 @@
 .promo {
   font-family: $secondary-font;
   color: #000000;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgba($bg-basic-grey, 0.85);
 }
 
 .promo__title {
@@ -14,5 +14,5 @@
 .promo__lead {
   line-height: 14px;
   color: #ffffff;
-  text-transform: uppercase;
+  text-transform: uppercase; //верхний регистр
 }
