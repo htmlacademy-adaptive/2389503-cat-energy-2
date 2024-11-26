@@ -1,3 +1,36 @@
 .example {
+  background-color: #eaeaea;
+  color: #000000;
+}
 
+.example__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__value {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__info-row .example__value {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.example__desc {
+  font-size: 12px;
+  line-height: 12px;
+  color: $text-special-dark-grey;
+}
+
+.example__info-row .example__desc {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
 }
