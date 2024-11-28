@@ -14,13 +14,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  color: $secondary-text-color;
   text-transform: uppercase;
 }
 
 .sub-products__desc {
   line-height: 14px;
-  color: $text-special-dark-grey;
+  color: $main-text-color;
 }
 
 .sub-products__gift-card {

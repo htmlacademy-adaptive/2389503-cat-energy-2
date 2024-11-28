@@ -1,4 +1,12 @@
 /* здесь используйте глобальные переменные */
-$bg-basic-green: #68b738; // Зелёный цвет фона
-$bg-basic-grey: #f2f2f2; // Серый цвет фона
-$text-special-dark-grey: #444444;
+/* Фоновые цвета */
+$basic-bg-color: #ffffff;
+$primary-bg-color: #68b738;
+$secondary-bg-color: #f2f2f2;
+$mask-bg-color: rgba($primary-bg-color, 0.85);
+
+/* Цвет текста */
+$basic-text-color: #000000;
+$main-text-color: #444444;
+$secondary-text-color: #222222;
+$alter-secondary-text-color: #111111;

@@ -3,8 +3,8 @@
 }
 
 .programms__card {
-  background-color: $bg-basic-grey;
-  color: #000000;
+  background-color: $secondary-bg-color;
+  color: $basic-text-color;
 }
 
 .programms__title {
@@ -17,14 +17,14 @@
 
 .programms__text {
   font-weight: 400;
-  color: $text-special-dark-grey;
+  color: $main-text-color;
 }
 
 .programms__link {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: $basic-text-color;
   text-transform: uppercase;
   text-decoration: none;
 }

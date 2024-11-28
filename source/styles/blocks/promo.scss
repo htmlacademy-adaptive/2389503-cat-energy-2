@@ -1,18 +1,18 @@
 .promo {
   font-family: $secondary-font;
-  color: #000000;
-  background-color: rgba($bg-basic-green, 0.85);
+  color: $basic-text-color;
+  background-color: $mask-bg-color;
 }
 
 .promo__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: #ffffff;
+  color: $basic-bg-color;
 }
 
 .promo__lead {
   line-height: 14px;
-  color: #ffffff;
-  text-transform: uppercase; //верхний регистр
+  color: $basic-bg-color;
+  text-transform: uppercase;
 }

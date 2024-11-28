@@ -1,10 +1,10 @@
 .gift-card {
-  background-color: rgba($bg-basic-green, 0.85);
-  color: #000000;
+  background-color: $mask-bg-color;
+  color: $basic-text-color;
 }
 
 .gift-card__desc {
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $basic-bg-color;
 }
