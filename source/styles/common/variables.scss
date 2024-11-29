@@ -1,12 +1,10 @@
 /* здесь используйте глобальные переменные */
-/* Фоновые цвета */
-$basic-color: #ffffff;
-$primary-color: #68b738;
-$secondary-color: #f2f2f2;
-$mask-color: rgba($primary-bg-color, 0.85);
-
-/* Цвет текста */
-$basic-text-color: #000000;
-$main-text-color: #444444;
-$secondary-text-color: #222222;
-$alter-secondary-text-color: #111111;
+/* цвета */
+$first-color: #ffffff;
+$second-color: #000000;
+$third-color: #68b738;
+$third-color-lighter: rgba($third-color, 0.85);
+$fourth-color: #f2f2f2;
+$fifth-color: #444444;
+$sixth-color: #222222;
+$eighth-color: #111111;
