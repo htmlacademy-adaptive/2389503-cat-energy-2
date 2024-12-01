@@ -1,6 +1,6 @@
 .example {
-  background-color: #eaeaea;
-  color: $basic-text-color;
+  background-color: $tenth-color;
+  color: $second-color;
 }
 
 .example__title {
@@ -25,12 +25,11 @@
 .example__desc {
   font-size: 12px;
   line-height: 12px;
-  color: $main-text-color;
+  color: $fifth-color;
 }
 
 .example__info-row .example__desc {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
-  color: $basic-text-color;
 }

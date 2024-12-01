@@ -11,21 +11,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: $secondary-text-color;
+  color: $fourth-color;
   text-transform: uppercase;
 }
 
 .product-card__desc {
   font-size: 12px;
   line-height: 16px;
-  color: $main-text-color;
+  color: $fifth-color;
 }
 
 .product-card--all .product-card__title {
-  color: $alter-secondary-text-color;
+  color: $third-color;
 }
 
 .product-card--all .product-card__button {
-  background-color: $secondary-bg-color;
-  color: $main-text-color;
+  background-color: $eleventh-color;
+  color: $fifth-color;
 }
