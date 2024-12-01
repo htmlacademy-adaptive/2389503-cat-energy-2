@@ -1,1 +1,14 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+// *,
+// *::before,
+// *::after {
+
+// }
+
+body {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $second-color;
+  background-color: $first-color;
+}
