@@ -1,10 +1,8 @@
 .gift-card {
-  background-color: $thirteenth-color-lighter;
-  color: $second-color;
+  @include block-color($second-color, $thirteenth-color-lighter);
 }
 
 .gift-card__desc {
-  font-size: 16px;
-  line-height: 20px;
+  @include font($primary-font, 16px, 20px);
   color: $first-color;
 }

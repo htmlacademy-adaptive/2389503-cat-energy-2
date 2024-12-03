@@ -1,18 +1,18 @@
 .promo {
-  font-family: $secondary-font;
-  color: $second-color;
-  background-color: $thirteenth-color-lighter;
+  @include block-color($second-color, $thirteenth-color-lighter);
+}
+
+.promo__container {
+  @include container;
 }
 
 .promo__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
+  @include font($secondary-font, 36px, 36px);
   color: $first-color;
 }
 
 .promo__lead {
-  line-height: 14px;
+  @include font($secondary-font, 14px, 14px);
   color: $first-color;
   text-transform: uppercase;
 }

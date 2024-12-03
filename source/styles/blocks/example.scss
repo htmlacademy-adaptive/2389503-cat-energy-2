@@ -1,35 +1,29 @@
 .example {
-  background-color: $tenth-color;
-  color: $second-color;
+  @include block-color($second-color, $tenth-color);
+}
+
+.example__container {
+  @include container;
 }
 
 .example__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  @include font($secondary-font, 36px, 40px);
 }
 
 .example__value {
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 24px;
+  @include font($secondary-font, 24px, 24px);
   text-transform: uppercase;
 }
 
 .example__info-row .example__value {
-  font-size: 14px;
-  line-height: 20px;
+  @include font($secondary-font, 14px, 20px);
 }
 
 .example__desc {
-  font-size: 12px;
-  line-height: 12px;
+  @include font($primary-font, 12px, 12px);
   color: $fifth-color;
 }
 
 .example__info-row .example__desc {
-  font-family: $secondary-font;
-  font-size: 14px;
-  line-height: 20px;
+  @include font($secondary-font, 14px, 20px);
 }

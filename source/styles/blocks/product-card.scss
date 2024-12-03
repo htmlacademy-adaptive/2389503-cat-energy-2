@@ -7,17 +7,13 @@
 }
 
 .product-card__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font($secondary-font, 16px, 20px);
   color: $fourth-color;
   text-transform: uppercase;
 }
 
 .product-card__desc {
-  font-size: 12px;
-  line-height: 16px;
+  @include font($primary-font, 12px, 16px);
   color: $fifth-color;
 }
 

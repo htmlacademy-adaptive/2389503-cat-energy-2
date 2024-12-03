@@ -2,17 +2,18 @@
 
 // }
 
+.contacts__container {
+  @include container;
+}
+
 .contacts__text {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font($secondary-font, 16px, 20px);
   color: $third-color;
   text-transform: uppercase;
 }
 
 .contacts__address {
+  @include font($primary-font, 14px, 20px);
   font-style: normal;
-  line-height: 20px;
   color: $fifth-color;
 }

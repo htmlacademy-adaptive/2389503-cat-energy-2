@@ -2,9 +2,14 @@
 
 // }
 
+.catalog__container {
+  @include container;
+}
+
 .catalog__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include font($secondary-font, 36px, 36px);
+}
+
+.catalog__list {
+  @include list-style-reset;
 }

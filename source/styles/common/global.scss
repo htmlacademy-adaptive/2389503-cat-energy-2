@@ -6,9 +6,7 @@
 // }
 
 body {
-  font-family: $primary-font;
-  font-size: 14px;
-  line-height: 18px;
-  color: $second-color;
-  background-color: $first-color;
+  @include font;
+  @include block-color;
+  margin: 0;
 }

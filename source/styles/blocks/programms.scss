@@ -2,28 +2,30 @@
 
 // }
 
+.programms__container {
+  @include container;
+}
+
+.programms__list {
+  @include list-style-reset;
+}
+
 .programms__card {
-  background-color: $eleventh-color;
-  color: $second-color;
+  @include block-color($second-color, $eleventh-color);
 }
 
 .programms__title {
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
+  @include font($secondary-font, 24px, 37px);
   text-transform: uppercase;
 }
 
 .programms__text {
-  font-weight: 400;
+  @include font;
   color: $fifth-color;
 }
 
 .programms__link {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 16px;
+  @include font($secondary-font, 16px, 16px);
   color: $second-color;
   text-transform: uppercase;
   text-decoration: none;

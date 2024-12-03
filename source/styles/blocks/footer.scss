@@ -1,6 +1,13 @@
 .footer {
-  background-color: $eleventh-color;
-  color: $second-color;
+  @include block-color($second-color, $eleventh-color);
+}
+
+.footer__container {
+  @include container;
+}
+
+.footer__socials {
+  @include list-style-reset;
 }
 
 .footer__copyright-link {
@@ -8,7 +15,6 @@
 }
 
 .footer__copyright {
-  font-size: 16px;
-  line-height: 20px;
+  @include font($primary-font, 16px, 20px);
   color: $fifth-color;
 }

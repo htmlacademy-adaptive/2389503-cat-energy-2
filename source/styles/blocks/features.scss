@@ -2,14 +2,19 @@
 
 // }
 
+.features__container {
+  @include container;
+}
+
+.features__list {
+  @include list-style-reset;
+}
+
 .features__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  @include font($secondary-font, 36px, 40px);
 }
 
 .features__desc {
-  font-weight: 400;
+  @include font;
   color: $fifth-color;
 }
