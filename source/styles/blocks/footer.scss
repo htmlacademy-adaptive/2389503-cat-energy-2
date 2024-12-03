@@ -1,0 +1,20 @@
+.footer {
+  @include block-color($second-color, $eleventh-color);
+}
+
+.footer__container {
+  @include container;
+}
+
+.footer__socials {
+  @include list-style-reset;
+}
+
+.footer__copyright-link {
+  text-decoration: none;
+}
+
+.footer__copyright {
+  @include font($primary-font, 16px, 20px);
+  color: $fifth-color;
+}

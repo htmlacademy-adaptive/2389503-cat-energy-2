@@ -1,0 +1,18 @@
+.promo {
+  @include block-color($second-color, $thirteenth-color-lighter);
+}
+
+.promo__container {
+  @include container;
+}
+
+.promo__title {
+  @include font($secondary-font, 36px, 36px);
+  color: $first-color;
+}
+
+.promo__lead {
+  @include font($secondary-font, 14px, 14px);
+  color: $first-color;
+  text-transform: uppercase;
+}

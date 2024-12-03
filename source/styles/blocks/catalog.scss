@@ -1,0 +1,15 @@
+// .catalog {
+
+// }
+
+.catalog__container {
+  @include container;
+}
+
+.catalog__title {
+  @include font($secondary-font, 36px, 36px);
+}
+
+.catalog__list {
+  @include list-style-reset;
+}

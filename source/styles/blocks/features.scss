@@ -1,0 +1,20 @@
+// .features {
+
+// }
+
+.features__container {
+  @include container;
+}
+
+.features__list {
+  @include list-style-reset;
+}
+
+.features__title {
+  @include font($secondary-font, 36px, 40px);
+}
+
+.features__desc {
+  @include font;
+  color: $fifth-color;
+}
