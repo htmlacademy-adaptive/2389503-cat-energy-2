@@ -1,0 +1,14 @@
+// .navigation {
+
+// }
+
+.navigation__list {
+  @include list-style-reset;
+}
+
+.navigation__link {
+  @include font($secondary-font, 20px, 20px);
+  color: $second-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}

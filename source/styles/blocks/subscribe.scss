@@ -1,0 +1,19 @@
+// .subscribe {
+
+// }
+
+.subscribe__container {
+  @include container;
+}
+
+.subscribe__title {
+  @include font($secondary-font, 24px, 24px);
+}
+
+.subscribe__text {
+  @include font($secondary-font, 16px, 24px);
+}
+
+.subscribe__button {
+  @include font($secondary-font, 20px, 26px);
+}

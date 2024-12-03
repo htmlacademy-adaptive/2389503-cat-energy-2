@@ -1,0 +1,8 @@
+.gift-card {
+  @include block-color($second-color, $thirteenth-color-lighter);
+}
+
+.gift-card__desc {
+  @include font($primary-font, 16px, 20px);
+  color: $first-color;
+}

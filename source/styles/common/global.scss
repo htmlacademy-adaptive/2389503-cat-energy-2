@@ -1,1 +1,12 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+// *,
+// *::before,
+// *::after {
+
+// }
+
+body {
+  @include font;
+  @include block-color;
+  margin: 0;
+}
