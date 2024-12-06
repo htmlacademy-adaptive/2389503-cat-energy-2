@@ -8,7 +8,7 @@
 
 .contacts__text {
   @include font($secondary-font, 16px, 20px);
-  color: $third-color;
+  color: $emphasis-color;
   text-transform: uppercase;
 }
 
