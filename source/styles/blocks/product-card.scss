@@ -14,7 +14,7 @@
 
 .product-card__desc {
   @include font($primary-font, 12px, 16px);
-  color: $fifth-color;
+  color: $secondary-color;
 }
 
 .product-card--all .product-card__title {
@@ -23,5 +23,5 @@
 
 .product-card--all .product-card__button {
   background-color: $eleventh-color;
-  color: $fifth-color;
+  color: $secondary-color;
 }
