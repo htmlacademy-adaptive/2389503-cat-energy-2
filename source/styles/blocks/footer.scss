@@ -1,5 +1,5 @@
 .footer {
-  @include block-color($second-color, $eleventh-color);
+  @include block-color($body-color, $eleventh-color);
 }
 
 .footer__container {

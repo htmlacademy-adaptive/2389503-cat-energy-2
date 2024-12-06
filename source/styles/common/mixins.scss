@@ -15,14 +15,14 @@
   line-height: $line-height;
 }
 
-@mixin block-color($color: $second-color, $bg-color: $first-color) {
+@mixin block-color($color: $body-color, $bg-color: $body-bg) {
   color: $color;
   background-color: $bg-color;
 }
 
 @mixin button {
   @include font($secondary-font, 16px, 20px);
-  @include block-color($first-color, $thirteenth-color);
+  @include block-color($body-bg, $thirteenth-color);
   text-transform: uppercase;
   text-decoration: none;
 }

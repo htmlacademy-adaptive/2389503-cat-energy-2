@@ -1,5 +1,5 @@
 .example {
-  @include block-color($second-color, $tenth-color);
+  @include block-color($body-color, $tenth-color);
 }
 
 .example__container {

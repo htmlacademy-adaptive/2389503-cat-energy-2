@@ -1,8 +1,8 @@
 .gift-card {
-  @include block-color($second-color, $thirteenth-color-lighter);
+  @include block-color($body-color, $thirteenth-color-lighter);
 }
 
 .gift-card__desc {
   @include font($primary-font, 16px, 20px);
-  color: $first-color;
+  color: $body-bg;
 }

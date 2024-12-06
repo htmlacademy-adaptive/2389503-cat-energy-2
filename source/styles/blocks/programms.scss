@@ -11,7 +11,7 @@
 }
 
 .programms__card {
-  @include block-color($second-color, $eleventh-color);
+  @include block-color($body-color, $eleventh-color);
 }
 
 .programms__title {
@@ -26,7 +26,7 @@
 
 .programms__link {
   @include font($secondary-font, 16px, 16px);
-  color: $second-color;
+  color: $body-color;
   text-transform: uppercase;
   text-decoration: none;
 }

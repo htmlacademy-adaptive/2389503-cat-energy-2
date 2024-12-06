@@ -8,7 +8,7 @@
 
 .navigation__link {
   @include font($secondary-font, 20px, 20px);
-  color: $second-color;
+  color: $body-color;
   text-transform: uppercase;
   text-decoration: none;
 }
