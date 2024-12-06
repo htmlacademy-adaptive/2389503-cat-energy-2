@@ -16,7 +16,7 @@
 
 .sub-products__heading {
   @include font($secondary-font, 16px, 16px);
-  color: $fourth-color;
+  color: $secondary-color-darker;
   text-transform: uppercase;
 }
 

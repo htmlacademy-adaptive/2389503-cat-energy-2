@@ -8,7 +8,7 @@
 
 .product-card__title {
   @include font($secondary-font, 16px, 20px);
-  color: $fourth-color;
+  color: $secondary-color-darker;
   text-transform: uppercase;
 }
 
