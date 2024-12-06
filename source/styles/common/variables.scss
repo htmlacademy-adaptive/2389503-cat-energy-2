@@ -1,21 +1,20 @@
 /* здесь используйте глобальные переменные */
 /* цвета */
 $body-color: #000000; // Передний план (цвет) по умолчанию, включая компоненты
-$body-bg: #ffffff; // Фон(цвет) по умолчанию, включая компоненты
+$body-bg: #ffffff; // Фоновый цвет по умолчанию, включая компоненты
 $secondary-color: #444444; // Более светлый цвет текста
 $secondary-color-darker: #222222; // Более тёмный цвет текста
 $emphasis-color: #111111; // Для более контрастного текста
 $light-color: #f2f2f2; // Цвет фона карточек товара, программ, футера, кнопки
-$light-color-darker: #eaeaea;
-$sixth-color: #666666;
-$seventh-color: #cdcdcd;
-$eighth-color: #d3d3d3;
-$fifteenth-color: #d9d9d9;
-$ninth-color: #e7e7e7;
-
-$tenth-color-darker: #ebebeb;
-$twelfth-color: #5eaa2f;
-$twelfth-color-lighter: rgba(94, 170, 47, 0.3);
-$thirteenth-color: #68b738;
-$thirteenth-color-lighter:rgba(104, 183, 56, 0.85);
-$fourteenth-color: #ff8282;
+$border-color: #cdcdcd; // Цвет разделителя в карточках и бордера инпута email
+$gray-100: #eaeaea; // Цвет фона блока example
+$gray-200: #ebebeb; // Цвет разделителя в catalog и фоновый цвет кнопки в состоянии hover и pressed
+$gray-300: #e7e7e7; // Цвет бордера инпута с именем в обчном состоянии
+$gray-400: #e6e6e6; // Цвет разделителя в меню
+$gray-500: #d9d9d9; // Цвет разделителя в секциях и в программах
+$gray-600: #d3d3d3; // Цвет плюсика в кнопке показать всё
+$gray-900: #666666; // Цвет разделителя и кнопка под палец в слайдере и цвет заливки иконок в обычн состоянии
+$primary: #68b738; // Цвет основной темы
+$primary-rgb: rgba($primary, 0.85); //Цвет оверлея над фоновой картинкой
+$primary-bg: #5eaa2f; // Цвет кнопок при наведении и при нажатии
+$danger: #ff8282; // Цвет input error

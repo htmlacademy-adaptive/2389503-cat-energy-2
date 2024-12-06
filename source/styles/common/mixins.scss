@@ -22,7 +22,7 @@
 
 @mixin button {
   @include font($secondary-font, 16px, 20px);
-  @include block-color($body-bg, $thirteenth-color);
+  @include block-color($body-bg, $primary);
   text-transform: uppercase;
   text-decoration: none;
 }
