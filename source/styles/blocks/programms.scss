@@ -11,7 +11,7 @@
 }
 
 .programms__card {
-  @include block-color($body-color, $eleventh-color);
+  @include block-color($body-color, $light-color);
 }
 
 .programms__title {
