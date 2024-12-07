@@ -1,5 +1,5 @@
 .example {
-  @include block-color($body-color, $gray-100);
+  @include block-color($black, $gray-100);
 }
 
 .example__container {

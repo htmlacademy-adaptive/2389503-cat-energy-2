@@ -1,5 +1,5 @@
 .footer {
-  @include block-color($body-color, $light-color);
+  @include block-color($black, $light-color);
 }
 
 .footer__container {

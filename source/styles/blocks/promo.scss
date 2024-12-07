@@ -1,5 +1,5 @@
 .promo {
-  @include block-color($body-color, $primary-lighter);
+  @include block-color($black, $primary-lighter);
 }
 
 .promo__container {
@@ -8,11 +8,11 @@
 
 .promo__title {
   @include font($secondary-font, 36px, 36px);
-  color: $body-bg;
+  color: $white;
 }
 
 .promo__lead {
   @include font($secondary-font, 14px, 14px);
-  color: $body-bg;
+  color: $white;
   text-transform: uppercase;
 }
