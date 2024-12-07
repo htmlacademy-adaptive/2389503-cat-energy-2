@@ -8,12 +8,12 @@
 
 .contacts__text {
   @include font($secondary-font, 16px, 20px);
-  color: $darkest;
+  color: $darker;
   text-transform: uppercase;
 }
 
 .contacts__address {
   @include font($primary-font, 14px, 20px);
   font-style: normal;
-  color: $dark;
+  color: $gray-900;
 }
