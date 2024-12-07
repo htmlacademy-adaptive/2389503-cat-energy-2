@@ -16,11 +16,11 @@
 
 .sub-products__heading {
   @include font($secondary-font, 16px, 16px);
-  color: $secondary-color-darker;
+  color: $darker;
   text-transform: uppercase;
 }
 
 .sub-products__desc {
   @include font($primary-font, 14px, 14px);
-  color: $secondary-color;
+  color: $dark;
 }

@@ -1,5 +1,5 @@
 .footer {
-  @include block-color($black, $light-color);
+  @include block-color($black, $light);
 }
 
 .footer__container {
@@ -16,5 +16,5 @@
 
 .footer__copyright {
   @include font($primary-font, 16px, 20px);
-  color: $secondary-color;
+  color: $dark;
 }

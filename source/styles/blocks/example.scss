@@ -21,7 +21,7 @@
 
 .example__desc {
   @include font($primary-font, 12px, 12px);
-  color: $secondary-color;
+  color: $dark;
 }
 
 .example__info-row .example__desc {
