@@ -1,5 +1,5 @@
 .promo {
-  @include block-color($body-color, $primary-rgb);
+  @include block-color($body-color, $primary-lighter);
 }
 
 .promo__container {
