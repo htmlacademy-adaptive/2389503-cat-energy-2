@@ -1,6 +1,6 @@
-// .header {
-
-// }
+.header {
+  @include block-color;
+}
 
 .header__navigation-wrapper {
   @include container;
