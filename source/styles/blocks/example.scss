@@ -20,8 +20,7 @@
 }
 
 .example__desc {
-  @include font($primary-font, 12px, 12px);
-  color: $gray-900;
+  @include font($primary-font, 12px, 12px, $gray-900);
 }
 
 .example__info-row .example__desc {

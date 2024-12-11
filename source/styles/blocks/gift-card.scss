@@ -3,6 +3,5 @@
 }
 
 .gift-card__desc {
-  @include font($primary-font, 16px, 20px);
-  color: $white;
+  @include font($primary-font, 16px, 20px, $white);
 }

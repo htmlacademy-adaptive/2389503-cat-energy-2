@@ -20,13 +20,11 @@
 }
 
 .programms__text {
-  @include font;
-  color: $gray-900;
+  @include font($primary-font, 14px, 18px, $gray-900);
 }
 
 .programms__link {
   @include font($secondary-font, 16px, 16px);
-  color: $black;
   text-transform: uppercase;
   text-decoration: none;
 }

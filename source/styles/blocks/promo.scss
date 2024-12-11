@@ -7,12 +7,10 @@
 }
 
 .promo__title {
-  @include font($secondary-font, 36px, 36px);
-  color: $white;
+  @include font($secondary-font, 36px, 36px, $white);
 }
 
 .promo__lead {
-  @include font($secondary-font, 14px, 14px);
-  color: $white;
+  @include font($secondary-font, 14px, 14px, $white);
   text-transform: uppercase;
 }

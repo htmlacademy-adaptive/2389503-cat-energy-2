@@ -7,13 +7,11 @@
 }
 
 .contacts__text {
-  @include font($secondary-font, 16px, 20px);
-  color: $darker;
+  @include font($secondary-font, 16px, 20px, $darker);
   text-transform: uppercase;
 }
 
 .contacts__address {
-  @include font($primary-font, 14px, 20px);
+  @include font($primary-font, 14px, 20px, $gray-900);
   font-style: normal;
-  color: $gray-900;
 }

@@ -15,12 +15,10 @@
 }
 
 .sub-products__heading {
-  @include font($secondary-font, 16px, 16px);
-  color: $dark;
+  @include font($secondary-font, 16px, 16px, $dark);
   text-transform: uppercase;
 }
 
 .sub-products__desc {
-  @include font($primary-font, 14px, 14px);
-  color: $gray-900;
+  @include font($primary-font, 14px, 14px, $gray-900);
 }

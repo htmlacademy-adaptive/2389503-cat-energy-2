@@ -15,5 +15,5 @@
 }
 
 .subscribe__button {
-  @include font($secondary-font, 20px, 26px);
+  @include font($secondary-font, 20px, 26px, $white);
 }
