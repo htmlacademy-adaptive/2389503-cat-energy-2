@@ -1,3 +1,8 @@
 .button {
-  @include button;
+  @include font($secondary-font, 16px, 20px);
+  @include block-color($white, $primary);
+  @include link;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
 }

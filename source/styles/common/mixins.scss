@@ -26,12 +26,6 @@
   text-decoration: none;
 }
 
-@mixin button {
-  @include font($secondary-font, 16px, 20px);
-  @include block-color($white, $primary);
-  @include link;
-}
-
 @mixin list-style-reset {
   margin: 0;
   padding: 0;
