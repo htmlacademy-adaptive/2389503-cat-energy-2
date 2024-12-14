@@ -1,0 +1,29 @@
+// .programms {
+
+// }
+
+.programms__container {
+  @include container;
+}
+
+.programms__list {
+  @include list-style-reset;
+}
+
+.programms__card {
+  @include block-color($black, $light);
+}
+
+.programms__title {
+  @include font($secondary-font, 24px, 37px);
+  text-transform: uppercase;
+}
+
+.programms__text {
+  @include font($primary-font, 14px, 18px, $gray-900);
+}
+
+.programms__link {
+  @include font($secondary-font, 16px, 16px);
+  @include link;
+}

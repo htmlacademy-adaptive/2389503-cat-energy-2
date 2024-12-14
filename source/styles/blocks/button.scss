@@ -1,0 +1,10 @@
+.button {
+  @include font($secondary-font, 16px, 20px);
+  @include block-color($white, $primary);
+  @include link;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
