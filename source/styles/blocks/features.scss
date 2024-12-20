@@ -10,6 +10,18 @@
   @include list-style-reset;
 }
 
+.features__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .features__title {
   @include font($secondary-font, 36px, 40px);
 }
