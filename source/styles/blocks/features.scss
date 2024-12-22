@@ -11,51 +11,35 @@
 }
 
 .features__item--leaf::before {
+  @include background($primary, url("../../icons/stack.svg#icon-leaf"), no-repeat, 50% 50%, 30px 32px);
   content: "";
   display: block;
   width: 60px;
   height: 60px;
-  background-color: $primary;
-  background-image: url("../../icons/stack.svg#icon-leaf");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .features__item--powder::before {
+  @include background($primary, url("../../icons/stack.svg#icon-powder"), no-repeat, 50% 50%, 30px 32px);
   content: "";
   display: block;
   width: 60px;
   height: 60px;
-  background-color: $primary;
-  background-image: url("../../icons/stack.svg#icon-powder");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .features__item--eat::before {
+  @include background($primary, url("../../icons/stack.svg#icon-eat"), no-repeat, 50% 50%, 30px 32px);
   content: "";
   display: block;
   width: 60px;
   height: 60px;
-  background-color: $primary;
-  background-image: url("../../icons/stack.svg#icon-eat");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .features__item--clock::before {
+  @include background($primary, url("../../icons/stack.svg#icon-clock"), no-repeat, 50% 50%, 30px 32px);
   content: "";
   display: block;
   width: 60px;
   height: 60px;
-  background-color: $primary;
-  background-image: url("../../icons/stack.svg#icon-clock");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .features__title {
