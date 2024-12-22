@@ -10,13 +10,49 @@
   @include list-style-reset;
 }
 
-.features__item::before {
+.features__item--leaf::before {
   content: "";
   display: block;
   width: 60px;
   height: 60px;
   background-color: $primary;
   background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features__item--powder::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary;
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features__item--eat::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary;
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features__item--clock::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary;
+  background-image: url("../../icons/stack.svg#icon-clock");
   background-size: 30px 32px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
