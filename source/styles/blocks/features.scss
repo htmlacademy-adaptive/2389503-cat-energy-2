@@ -11,35 +11,19 @@
 }
 
 .features__item--leaf::before {
-  @include background($primary, url("../../icons/stack.svg#icon-leaf"), no-repeat, 50% 50%, 30px 32px);
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+  @include pseudo-before($primary, url("../../icons/stack.svg#icon-leaf"), no-repeat, 50% 50%, 30px 32px, "", block, 60px, 60px);
 }
 
 .features__item--powder::before {
-  @include background($primary, url("../../icons/stack.svg#icon-powder"), no-repeat, 50% 50%, 30px 32px);
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+  @include pseudo-before($primary, url("../../icons/stack.svg#icon-powder"), no-repeat, 50% 50%, 30px 32px, "", block, 60px, 60px);
 }
 
 .features__item--eat::before {
-  @include background($primary, url("../../icons/stack.svg#icon-eat"), no-repeat, 50% 50%, 30px 32px);
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+  @include pseudo-before($primary, url("../../icons/stack.svg#icon-eat"), no-repeat, 50% 50%, 30px 32px, "", block, 60px, 60px);
 }
 
 .features__item--clock::before {
-  @include background($primary, url("../../icons/stack.svg#icon-clock"), no-repeat, 50% 50%, 30px 32px);
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+  @include pseudo-before($primary, url("../../icons/stack.svg#icon-clock"), no-repeat, 50% 50%, 30px 32px, "", block, 60px, 60px);
 }
 
 .features__title {

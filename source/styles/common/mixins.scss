@@ -37,10 +37,19 @@
   margin: 0 auto;
 }
 
-@mixin background($bg-color, $bg-image, $bg-repeat, $bg-position, $bg-size) {
+@mixin background($bg-color, $bg-image-src, $bg-repeat, $bg-position, $bg-size) {
   background-color: $bg-color;
-  background-image: $bg-image;
+  background-image: $bg-image-src;
   background-repeat: $bg-repeat;
   background-position: $bg-position;
   background-size: $bg-size;
 }
+
+@mixin pseudo-before($bg-color, $bg-image-src, $bg-repeat, $bg-position, $bg-size, $content, $display, $width, $height) {
+  @include background($bg-color, $bg-image-src, $bg-repeat, $bg-position, $bg-size);
+  content: $content;
+  display: $display;
+  width: $width;
+  height: $height;
+}
+
