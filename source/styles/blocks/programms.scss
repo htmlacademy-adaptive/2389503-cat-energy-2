@@ -22,20 +22,20 @@
 .programms__card::before {
   content: "";
   display: block;
-  width: 50px;
-  height: 50px;
-  background-color: $primary;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  border-radius: 50%;
 }
 
 .programms__card--cat-slim::before {
+  width: 50px;
+  height: 53px;
   background-image: url("../../icons/stack.svg#icon-cat-slim");
   background-size: 36px 50px;
 }
 
 .programms__card--cat-pro::before {
+  width: 67px;
+  height: 50px;
   background-image: url("../../icons/stack.svg#icon-cat-pro");
   background-size: 67px 28px;
 }
