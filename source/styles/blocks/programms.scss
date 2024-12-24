@@ -47,4 +47,14 @@
 .programms__link {
   @include font($secondary-font, 16px, 16px);
   @include link;
+  display: inline-block;
+  padding: 4px 47px 4px 0;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  background-repeat: no-repeat;
+  background-size: 24px 12px;
+  background-position: right center;
+}
+
+.programms__link:hover {
+  background-image: url("../../icons/stack.svg#icon-arrow-hover");
 }
