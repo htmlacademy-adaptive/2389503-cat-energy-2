@@ -6,6 +6,23 @@
   @include container;
 }
 
+.footer__logo-link {
+  color: $darker;
+  text-decoration: none;
+}
+
+.footer__logo-link:hover .footer__logo {
+  color: $gray-950;
+}
+
+.footer__logo-link:focus .footer__logo {
+  color: $gray-950;
+}
+
+.footer__logo-link:active .footer__logo {
+  opacity: 0.3;
+}
+
 .footer__socials {
   @include list-style-reset;
 }
@@ -16,6 +33,10 @@
 }
 
 .footer__copyright-link:hover .footer__copyright-icon {
+  color: $primary;
+}
+
+.footer__copyright-link:focus .footer__copyright-icon {
   color: $primary;
 }
 
