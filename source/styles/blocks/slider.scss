@@ -1,3 +1,18 @@
 // .slider {
 
 // }
+
+.slider__button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: #663399;
+  mask-image: url("../../icons/stack.svg#icon-thumb");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.slider__button:hover {
+  background-color: #331a4d;
+}
