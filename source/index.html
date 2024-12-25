@@ -18,8 +18,12 @@
 <body class="page__body">
   <header class="page__header header">
     <div class="header__navigation-wrapper">
-      <a class="header__logo logo" href="#">
-        <img class="logo__mobile" src="/" width="100" height="100" alt="Логотип сайта Кэт Энерджи">
+      <a class="header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" width="202" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+          <img class="header__logo-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
+        </picture>
       </a>
       <a class="header__logo-link" href="#">
         <svg class="header__logo" width="101" height="18">
