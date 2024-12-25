@@ -6,6 +6,10 @@
   @include container;
 }
 
+.header__logo {
+  text-decoration: none;
+}
+
 .header__logo-link {
   text-decoration: none;
   color: $darker;
