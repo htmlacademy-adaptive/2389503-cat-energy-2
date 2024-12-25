@@ -24,3 +24,7 @@
 .socials__link:hover .socials__icon {
   color: $primary;
 }
+
+.socials__link:active .socials__icon {
+  opacity: 0.3;
+}
