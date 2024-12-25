@@ -6,6 +6,11 @@
   @include container;
 }
 
+.header__logo-link {
+  text-decoration: none;
+  color: $darker;
+}
+
 .header__button {
   width: 24px;
   height: 24px;
