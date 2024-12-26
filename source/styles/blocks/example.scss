@@ -1,0 +1,28 @@
+.example {
+  @include block-color($black, $gray-100);
+}
+
+.example__container {
+  @include container;
+}
+
+.example__title {
+  @include font($secondary-font, 36px, 40px);
+}
+
+.example__value {
+  @include font($secondary-font, 24px, 24px);
+  text-transform: uppercase;
+}
+
+.example__info-row .example__value {
+  @include font($secondary-font, 14px, 20px);
+}
+
+.example__desc {
+  @include font($primary-font, 12px, 12px, $gray-900);
+}
+
+.example__info-row .example__desc {
+  @include font($secondary-font, 14px, 20px);
+}
