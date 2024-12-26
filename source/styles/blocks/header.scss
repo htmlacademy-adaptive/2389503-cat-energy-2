@@ -5,3 +5,33 @@
 .header__navigation-wrapper {
   @include container;
 }
+
+.header__logo {
+  text-decoration: none;
+}
+
+.header__logo-link {
+  text-decoration: none;
+  color: $darker;
+}
+
+.header__button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.header__button--mobile-open {
+  background-image: url("../../icons/stack.svg#icon-burger");
+  background-size: 24px 24px;
+}
+
+.header__button--mobile-close {
+  background-image: url("../../icons/stack.svg#icon-close");
+  background-size: 18px 18px;
+}
