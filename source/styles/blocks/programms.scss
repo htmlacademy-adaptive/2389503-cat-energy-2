@@ -73,6 +73,10 @@
   background-image: url("../../icons/stack.svg#icon-arrow-hover");
 }
 
+.programms__link:focus {
+  background-image: url("../../icons/stack.svg#icon-arrow-hover");
+}
+
 .programms__link:active {
   opacity: 0.3;
 }
