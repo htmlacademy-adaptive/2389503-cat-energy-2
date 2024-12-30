@@ -11,16 +11,16 @@
   text-decoration: none;
 }
 
-.footer__logo-link:hover .footer__logo {
+.footer__logo-link:hover .footer__logo-text {
   color: $gray-950;
 }
 
-.footer__logo-link:focus .footer__logo {
+.footer__logo-link:focus .footer__logo-text {
   color: $gray-950;
 }
 
-.footer__logo-link:active .footer__logo {
-  opacity: 0.3;
+.footer__logo-link:active .footer__logo-text {
+  color: $gray-750;
 }
 
 .footer__socials {
