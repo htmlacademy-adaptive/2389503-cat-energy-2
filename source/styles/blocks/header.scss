@@ -15,6 +15,14 @@
   color: $darker;
 }
 
+.header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.header__logo-link:active {
+  opacity: 0.6;
+}
+
 .header__button {
   width: 24px;
   height: 24px;
