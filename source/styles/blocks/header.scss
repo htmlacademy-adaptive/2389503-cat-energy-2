@@ -80,6 +80,16 @@
   background-size: 18px 18px;
 }
 
+.header__navigation {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header__navigation {
+    display: block;
+  }
+}
+
 .header__navigation-list {
   @include list-style-reset;
   display: flex;
