@@ -13,6 +13,7 @@
   .header__navigation-wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-inline: 30px;
   }
 }
@@ -77,4 +78,22 @@
   height: 18px;
   background-image: url("../../icons/stack.svg#icon-close");
   background-size: 18px 18px;
+}
+
+.header__navigation-list {
+  @include list-style-reset;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header__navigation-list {
+    flex-direction: row;
+  }
+}
+
+.header__navigation-link {
+  @include font($secondary-font, 20px, 20px);
+  @include link;
 }
