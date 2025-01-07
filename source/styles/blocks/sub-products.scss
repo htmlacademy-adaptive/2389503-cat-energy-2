@@ -3,7 +3,8 @@
 // }
 
 .sub-products__container {
-  @include container;
+  width: 280px;
+  margin: o auto;
 }
 
 .sub-products__title {

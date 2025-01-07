@@ -3,7 +3,6 @@
 }
 
 .header__navigation-wrapper {
-  @include container;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -11,7 +10,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header__navigation-wrapper {
+    padding-inline: 30px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .header__navigation-wrapper {
+    padding-inline: 110px;
+  }
 }
 
 .header__mobile-wrapper {
