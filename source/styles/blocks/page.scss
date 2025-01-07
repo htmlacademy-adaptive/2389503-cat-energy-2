@@ -6,13 +6,13 @@
   padding-top: 13px;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-width) {
   .page__header {
     padding-top: 25px;
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .page__header {
     padding-top: 55px;
   }
