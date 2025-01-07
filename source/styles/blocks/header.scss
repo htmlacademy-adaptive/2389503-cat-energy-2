@@ -6,6 +6,8 @@
   @include container;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding-inline: 20px;
 }
 
 @media (min-width: $tablet-width) {
