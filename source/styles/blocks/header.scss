@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+@media (min-width: $tablet-width) {
+
+}
+
 .header__mobile-wrapper {
   display: flex;
   justify-content: space-between;
