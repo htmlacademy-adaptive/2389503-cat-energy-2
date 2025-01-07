@@ -2,18 +2,18 @@
 
 // }
 
-.page__body {
+.page__header {
   padding-top: 13px;
 }
 
 @media (min-width: $tablet) {
-  .page__body {
+  .page__header {
     padding-top: 25px;
   }
 }
 
 @media (min-width: $desktop) {
-  .page__body {
+  .page__header {
     padding-top: 55px;
   }
 }
