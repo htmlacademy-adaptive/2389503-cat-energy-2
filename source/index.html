@@ -18,17 +18,19 @@
 <body class="page__body">
   <header class="page__header header">
     <div class="header__navigation-wrapper">
-      <a class="header__logo-link" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-          <img class="header__logo-pic-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
-        </picture>
-        <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип в виде текста">
-      </a>
-      <button class="header__button header__button--mobile-open" type="button">
-        <span class="visually-hidden">Расскрытие главного меню</span>
-      </button>
+      <div class="header__mobile-wrapper">
+        <a class="header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img class="header__logo-pic-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
+          </picture>
+          <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип в виде текста">
+        </a>
+        <button class="header__button header__button--mobile-open" type="button">
+          <span class="visually-hidden">Расскрытие главного меню</span>
+        </button>
+      </div>
       <nav class="header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">

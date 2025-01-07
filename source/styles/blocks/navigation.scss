@@ -4,6 +4,7 @@
 
 .navigation__list {
   @include list-style-reset;
+  text-align: center;
 }
 
 .navigation__link {

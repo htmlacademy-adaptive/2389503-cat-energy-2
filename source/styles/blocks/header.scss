@@ -8,13 +8,22 @@
   flex-direction: column;
 }
 
+.header__mobile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__logo {
   text-decoration: none;
 }
 
 .header__logo-link {
-  text-decoration: none;
   color: $darker;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo-link:hover {
