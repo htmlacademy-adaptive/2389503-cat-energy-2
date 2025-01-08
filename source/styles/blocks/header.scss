@@ -70,7 +70,7 @@
   }
 }
 
-
+/* Фоновая иконка бургера сменяется на иконку крестика  на кнопке при добавлении этого класса */
 .header__button--mobile-close {
   width: 18px;
   height: 18px;
@@ -79,7 +79,7 @@
 }
 
 .header__navigation {
-  // display: none;
+  display: none;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -87,6 +87,10 @@
   }
 }
 
+/* Выпадающий список навигации в шапке отображается при добалении этого коласса */
+.header__navigation-show {
+  display: block;
+}
 
 .header__navigation-list {
   @include list-style-reset;
