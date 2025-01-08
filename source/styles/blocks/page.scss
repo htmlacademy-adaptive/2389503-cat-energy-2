@@ -17,3 +17,84 @@
     padding-top: 55px;
   }
 }
+
+.page__programms-container {
+  width: 280px;
+  margin: o auto;
+}
+
+.page__programms-list {
+  @include list-style-reset;
+}
+
+.page__programms-card {
+  @include block-color($black, $light);
+  position: relative;
+}
+
+.page__programms-title {
+  @include font($secondary-font, 24px, 37px);
+  text-transform: uppercase;
+}
+
+.page__programms-card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.page__programms-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: $primary;
+  border-radius: 50%;
+}
+
+.page__programms-card--cat-slim::after {
+  width: 50px;
+  height: 53px;
+  background-image: url("../../icons/stack.svg#icon-cat-slim");
+  background-size: 36px 50px;
+}
+
+.page__programms-card--cat-pro::after {
+  width: 67px;
+  height: 50px;
+  background-image: url("../../icons/stack.svg#icon-cat-pro");
+  background-size: 67px 28px;
+}
+
+.page__programms-text {
+  @include font($primary-font, 14px, 18px, $gray-900);
+}
+
+.page__programms-link {
+  @include font($secondary-font, 16px, 16px);
+  @include link;
+  display: inline-block;
+  padding: 4px 47px 4px 0;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  background-repeat: no-repeat;
+  background-size: 24px 12px;
+  background-position: right center;
+}
+
+.page__programms-link:hover {
+  background-image: url("../../icons/stack.svg#icon-arrow-hover");
+}
+
+.page__programms-link:focus {
+  background-image: url("../../icons/stack.svg#icon-arrow-hover");
+}
+
+.page__programms-link:active {
+  opacity: 0.3;
+}
+
