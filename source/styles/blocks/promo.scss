@@ -1,20 +1,20 @@
-.promo {
+.page__promo {
   @include block-color($black, $primary-lighter);
 }
 
-.promo__container {
+.page__promo-container {
   width: 280px;
-  margin: o auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.promo__title {
+.page__promo-title {
   @include font($secondary-font, 36px, 36px, $white);
 }
 
-.promo__lead {
+.page__promo-lead {
   @include font($secondary-font, 14px, 14px, $white);
   text-transform: uppercase;
 }
