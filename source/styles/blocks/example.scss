@@ -4,6 +4,14 @@
 
 .example__container {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: 1440px) {
+    @include container-desktop;
+  }
 }
 
 .example__title {

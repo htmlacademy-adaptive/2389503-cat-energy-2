@@ -8,13 +8,14 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    @include container-tablet;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
+    @include container-desktop;
   }
 }
 

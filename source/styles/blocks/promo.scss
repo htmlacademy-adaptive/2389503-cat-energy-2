@@ -13,12 +13,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    @include container-tablet;
     text-align: start;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   padding: 0 110px;
-  // }
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .promo__text-wrapper {
