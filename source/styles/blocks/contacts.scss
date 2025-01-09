@@ -3,8 +3,7 @@
 // }
 
 .contacts__container {
-  width: 280px;
-  margin: o auto;
+  @include container;
 }
 
 .contacts__text {

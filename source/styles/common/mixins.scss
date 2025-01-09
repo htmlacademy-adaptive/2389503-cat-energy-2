@@ -21,6 +21,11 @@
   background-color: $bg-color;
 }
 
+@mixin container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 @mixin link {
   text-transform: uppercase;
   text-decoration: none;

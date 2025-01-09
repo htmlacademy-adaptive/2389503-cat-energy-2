@@ -3,8 +3,7 @@
 }
 
 .example__container {
-  width: 280px;
-  margin: o auto;
+  @include container;
 }
 
 .example__title {

@@ -3,8 +3,7 @@
 // }
 
 .features__container {
-  width: 280px;
-  margin: o auto;
+  @include container;
 }
 
 .features__list {

@@ -3,8 +3,7 @@
 }
 
 .footer__container {
-  width: 280px;
-  margin: o auto;
+  @include container;
 }
 
 .footer__logo-link {
