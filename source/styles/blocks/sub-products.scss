@@ -3,8 +3,15 @@
 // }
 
 .sub-products__container {
-  width: 280px;
-  margin: o auto;
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .sub-products__title {
