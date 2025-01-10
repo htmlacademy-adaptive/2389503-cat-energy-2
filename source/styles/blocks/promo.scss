@@ -21,15 +21,13 @@
   @media (min-width: $desktop-width) {
     @include container-desktop;
     display: grid;
-    // grid-template-columns: 450px 600px;
+    grid-template-columns: 450px 600px;
   }
 }
 
-.promo__text-wrapper {
-  @media (min-width: $tablet-width) {
-    z-index: 10;
-  }
-}
+// .promo__text-wrapper {
+
+// }
 
 .promo__title {
   @include font($secondary-font, 36px, 36px, $white);
@@ -65,7 +63,6 @@
     position: relative;
     top: -31px;
     right: 90px;
-    order: 3;
   }
 
   @media (min-width: $desktop-width) {
