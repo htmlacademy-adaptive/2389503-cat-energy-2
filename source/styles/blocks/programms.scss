@@ -16,11 +16,25 @@
 
 .programms__list {
   @include list-style-reset;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .programms__card {
   @include block-color($black, $light);
   position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .programms__title {
