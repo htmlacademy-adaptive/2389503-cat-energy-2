@@ -16,6 +16,22 @@
 
 .features__list {
   @include list-style-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.features__item {
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+  }
 }
 
 .features__item::before {
