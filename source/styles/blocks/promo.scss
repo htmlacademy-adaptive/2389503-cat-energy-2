@@ -19,12 +19,12 @@
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
+    display: grid;
   }
 }
 
 .promo__text-wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 90px;
     z-index: 10;
   }
 }
@@ -51,7 +51,6 @@
     order: 2;
     z-index: 10;
     max-width: 242px;
-    margin-left: 90px;
   }
 }
 
@@ -61,4 +60,8 @@
     top: -31px;
     order: 3;
   }
+}
+
+.promo__image {
+  display: block;
 }
