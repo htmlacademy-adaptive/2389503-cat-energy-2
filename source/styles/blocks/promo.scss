@@ -22,7 +22,7 @@
     @include container-desktop;
     display: grid;
     grid-template-columns: 350px 100px 600px;
-    grid-template-rows: auto 52px auto;
+    grid-template-rows: 81px auto 52px auto;
     padding-left: 0;
   }
 }
@@ -30,7 +30,7 @@
 .promo__text-wrapper {
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2/ -3;
   }
 }
 
@@ -61,7 +61,7 @@
   @media (min-width: $desktop-width) {
     max-width: 244px;
     order: 0;
-    grid-row: 3 / 4;
+    grid-row: 4 / -1;
     align-self: center;
   }
 }
