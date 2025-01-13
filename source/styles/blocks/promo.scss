@@ -21,7 +21,7 @@
   @media (min-width: $desktop-width) {
     @include container-desktop;
     display: grid;
-    grid-template-columns: 350px 100px 600px 100px;
+    grid-template-columns: 350px 100px 600px;
     grid-template-rows: 81px auto 52px auto;
     padding-left: 0;
   }
