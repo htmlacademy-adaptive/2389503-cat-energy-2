@@ -21,7 +21,7 @@
   @media (min-width: $desktop-width) {
     @include container-desktop;
     display: grid;
-    grid-template-columns: 350px 100px 600px;
+    grid-template-columns: 350px 100px 600px 100px;
     grid-template-rows: 81px auto 52px auto;
     padding-left: 0;
   }
@@ -51,6 +51,26 @@
   }
 }
 
+.promo__image-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -31px;
+    right: 90px;
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    order: 0;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+  }
+}
+
+.promo__image {
+  display: block;
+}
+
 .promo__link {
   @media (min-width: $tablet-width) {
     order: 2;
@@ -64,24 +84,4 @@
     grid-row: 4 / 5;
     align-self: center;
   }
-}
-
-.promo__image-wrapper {
-  @media (min-width: $tablet-width) {
-    position: relative;
-    top: -31px;
-    right: 90px;
-    order: 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
-    order: 0;
-    grid-column: 2 / 4;
-    grid-row: 1 / -1;
-  }
-}
-
-.promo__image {
-  display: block;
 }
