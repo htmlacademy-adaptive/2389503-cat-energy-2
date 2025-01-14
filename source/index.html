@@ -106,33 +106,35 @@
       <div class="example__container">
         <h2 class="example__title">Живой&nbsp;пример</h2>
         <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__info-column">
-          <p class="example__info"><span class="example__value">5 кг</span><span class="example__desc">снижение веса</span></p>
-        </div>
-        <div class="example__info-column">
-          <p class="example__info"><span class="example__value">60 ДНЕЙ</span><span class="example__desc">затрачено времени</span></p>
-        </div>
-        <div class="example__info-row">
-          <p class="example__info"><span class="example__value">Затраты на питание:</span><span class="example__desc">15 000 РУБ.</span> </p>
-        </div>
-        <div class="example__slider slider">
-          <div class="slider__wrapper">
-            <picture>
-              <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
-              <img class="slider__image" src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" width="280" height="256" alt="Жирный кот">
-            </picture>
-            <picture>
-              <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
-              <img class="slider__image" src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" width="280" height="256" alt="Стройный кот">
-            </picture>
-
-            <button class="slider__button" type="button">
-              <svg class="slider__icon-thumb" width="40" height="40">
-                <use href="icons/stack.svg#icon-thumb"></use>
-              </svg>
-              <span class="visually-hidden">Ползунок</span>
-            </button>
+        <div class="example__info-wrapper">
+          <div class="example__info-column-wrapper">
+            <div class="example__info-column">
+              <p class="example__info"><span class="example__value">5 кг</span><span class="example__desc">снижение веса</span></p>
+            </div>
+            <div class="example__info-column">
+              <p class="example__info"><span class="example__value">60 ДНЕЙ</span><span class="example__desc">затрачено времени</span></p>
+            </div>
           </div>
+          <div class="example__info-row">
+            <p class="example__info"><span class="example__value">Затраты на питание:</span><span class="example__desc">15 000 РУБ.</span> </p>
+          </div>
+        </div>
+        <div class="example__slider">
+          <picture>
+            <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+            <img class="example__slider-image" src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" width="280" height="256" alt="Жирный кот">
+          </picture>
+          <picture>
+            <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+            <img class="example__slider-image" src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" width="280" height="256" alt="Стройный кот">
+          </picture>
+
+          <button class="example__slider-button" type="button">
+            <svg class="example__slider-icon-thumb" width="40" height="40">
+              <use href="icons/stack.svg#icon-thumb"></use>
+            </svg>
+            <span class="visually-hidden">Ползунок</span>
+          </button>
         </div>
       </div>
     </section>

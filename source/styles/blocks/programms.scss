@@ -9,7 +9,7 @@
     @include container-tablet;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     @include container-desktop;
   }
 }
@@ -17,7 +17,7 @@
 .programms__list {
   @include list-style-reset;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     display: flex;
     gap: 80px;
   }
