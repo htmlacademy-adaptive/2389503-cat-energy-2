@@ -57,6 +57,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
+    flex-direction: column;
   }
 }
 
@@ -72,6 +73,19 @@
 .example__info-column-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 43px;
+  }
+}
+
+.example__info-column {
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .example__info-row .example__desc {
