@@ -73,6 +73,13 @@
   @include font($secondary-font, 14px, 20px);
 }
 
+.example__slider {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+  }
+}
+
 .example__slider-button {
   padding: 0;
   color: $gray-800;
