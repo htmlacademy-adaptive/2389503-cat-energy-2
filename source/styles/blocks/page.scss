@@ -17,3 +17,11 @@
     padding-top: 55px;
   }
 }
+
+.page__example {
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
+}

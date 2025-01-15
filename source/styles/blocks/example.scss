@@ -15,13 +15,10 @@
 
   @media (min-width: $tablet-width) {
     @include container-tablet;
-    gap: 105px;
   }
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
-    flex-direction: row;
-    gap: 224px;
   }
 }
 
@@ -54,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 104px;
   }
 }
 
