@@ -12,6 +12,9 @@
 
 .example__container {
   @include container;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     @include container-tablet;
