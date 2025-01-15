@@ -11,6 +11,7 @@
 
   @media (min-width: 1440px) {
     @include container-desktop;
+    position: relative;
   }
 }
 
@@ -25,8 +26,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    z-index: 100;
     max-width: 565px;
     padding: 60px 80px;
+    background-color: $white;
   }
 }
 
