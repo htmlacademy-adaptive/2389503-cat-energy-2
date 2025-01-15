@@ -36,19 +36,41 @@
   @include font($secondary-font, 36px, 40px);
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 60px, 60px);
+    margin-bottom: 60px;
+  }
 }
 
 .example__description {
   @include font($primary-font, 14px, 18px, $gray-900);
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 16px, 24px, $gray-900);
+    margin-bottom: 55px;
+  }
+}
+
+.example__data-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .example__modules-wrapper {
   display: flex;
   justify-content: space-between;
-  text-align: center;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    gap: 43px;
+  }
 }
 
 .example__module {
@@ -56,14 +78,24 @@
   flex-direction: column;
   width: 124px;
   margin: 0;
-  padding: 14px 20px 0;
+  padding: 14px 19px 0;
   border: 1px solid $gray-700;
   border-radius: 3px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 15px 15px 0;
+  }
 }
 
 .example__module-value {
   @include font($secondary-font, 24px, 24px);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font ($secondary-font, 30px, 37px);
+  }
 }
 
 .example__module-desc {
@@ -72,13 +104,28 @@
   top: 16px;
   background-color: $gray-100;
   border: 2px solid $gray-100;
+
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 14px, 14px, $gray-900);
+    top: 9px;
+    background-color: $white;
+    border-color: $white;
+  }
 }
 
 .example__meta {
   @include font($secondary-font, 14px, 20px);
-
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 20px, 20px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+  }
 }
 
 .example__slider {
