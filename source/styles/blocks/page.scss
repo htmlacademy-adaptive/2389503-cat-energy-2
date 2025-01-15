@@ -3,25 +3,26 @@
 // }
 
 .page__header {
-  padding-top: 13px;
+  padding-top: 14px;
 }
 
 @media (min-width: $tablet-width) {
   .page__header {
-    padding-top: 25px;
+    padding-top: 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page__header {
-    padding-top: 55px;
+    padding-top: 56px;
   }
 }
 
 .page__example {
-  padding-top: 25px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 44px;
+    padding-bottom: 100px;
   }
 }
