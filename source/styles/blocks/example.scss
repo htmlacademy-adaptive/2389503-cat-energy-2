@@ -18,6 +18,7 @@
 
   @media (min-width: $tablet-width) {
     @include container-tablet;
+    gap: 100px;
   }
 
   @media (min-width: $desktop-width) {
