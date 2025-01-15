@@ -34,27 +34,31 @@
 
 .example__title {
   @include font($secondary-font, 36px, 40px);
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .example__description {
   @include font($primary-font, 14px, 18px, $gray-900);
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__modules-wrapper {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  margin-bottom: 34px;
 }
 
 .example__module {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 5px;
   width: 124px;
-}
-
-.example__module-desc {
-  @include font($primary-font, 12px, 12px, $gray-900);
+  margin: 0;
+  padding: 14px 20px 0;
+  border: 1px solid $gray-700;
+  border-radius: 3px;
 }
 
 .example__module-value {
@@ -62,8 +66,17 @@
   text-transform: uppercase;
 }
 
+.example__module-desc {
+  @include font($primary-font, 12px, 12px, $gray-900);
+  position: relative;
+  top: 16px;
+  background-color: $gray-100;
+  border: 2px solid $gray-100;
+}
+
 .example__meta {
   @include font($secondary-font, 14px, 20px);
+  text-align: center;
 }
 
 .example__slider {
