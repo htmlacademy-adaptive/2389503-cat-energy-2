@@ -40,6 +40,19 @@
   @include font($primary-font, 14px, 18px, $gray-900);
 }
 
+.example__modules-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__module {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 124px;
+}
+
 .example__module-desc {
   @include font($primary-font, 12px, 12px, $gray-900);
 }
