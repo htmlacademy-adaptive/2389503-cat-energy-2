@@ -5,10 +5,6 @@
     @include block-color($black, $white);
   }
 
-  @media (min-width: $tablet-width) {
-    @include block-color($black, $white);
-  }
-
   @media (min-width: $desktop-width) {
     @include block-color($black, $gray-100);
   }
@@ -23,42 +19,19 @@
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
-
-    display: grid;
-    grid-template-columns: 436px 224px 560px;
-    grid-template-rows: auto auto 69px auto;
   }
 }
 
+// .example__content {
+
+// }
+
 .example__title {
   @include font($secondary-font, 36px, 40px);
-
-  @media (min-width: $desktop-width) {
-    grid-row: 1 / 2;
-  }
 }
 
 .example__desc {
   @include font($primary-font, 12px, 12px, $gray-900);
-
-  @media (min-width: $desktop-width) {
-    grid-row: 2 / 3;
-  }
-}
-
-.example__info-wrapper {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
-    flex-direction: column;
-  }
 }
 
 .example__value {
@@ -70,23 +43,6 @@
   @include font($secondary-font, 14px, 20px);
 }
 
-.example__info-column-wrapper {
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    justify-content: flex-start;
-    gap: 43px;
-  }
-}
-
-.example__info-column {
-  width: 124px;
-
-  @media (min-width: $tablet-width) {
-    width: 162px;
-  }
-}
 
 .example__info-row .example__desc {
   @include font($secondary-font, 14px, 20px);
