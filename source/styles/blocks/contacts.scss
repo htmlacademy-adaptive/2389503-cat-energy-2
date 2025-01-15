@@ -53,3 +53,21 @@
     text-align: right;
   }
 }
+
+.contacts__location {
+  width: calc(100% + 40px);
+  min-height: 362px;
+  margin-left: -20px;
+  background-color: $gray-900;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% + 60px);
+    min-height: 400px;
+    margin-left: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% + 220px);
+    margin-left: -110px;
+  }
+}
