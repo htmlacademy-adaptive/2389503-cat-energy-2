@@ -12,9 +12,6 @@
 
 .example__container {
   @include container;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 
   @media (min-width: $tablet-width) {
     @include container-tablet;
@@ -27,10 +24,6 @@
     gap: 224px;
   }
 }
-
-// .example__content {
-
-// }
 
 .example__title {
   @include font($secondary-font, 36px, 40px);
@@ -55,6 +48,8 @@
 }
 
 .example__data-wrapper {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
