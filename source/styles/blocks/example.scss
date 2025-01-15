@@ -30,21 +30,16 @@
   @include font($secondary-font, 36px, 40px);
 }
 
-.example__desc {
+.example__module-desc {
   @include font($primary-font, 12px, 12px, $gray-900);
 }
 
-.example__value {
+.example__module-value {
   @include font($secondary-font, 24px, 24px);
   text-transform: uppercase;
 }
 
-.example__info-row .example__value {
-  @include font($secondary-font, 14px, 20px);
-}
-
-
-.example__info-row .example__desc {
+.example__meta {
   @include font($secondary-font, 14px, 20px);
 }
 
