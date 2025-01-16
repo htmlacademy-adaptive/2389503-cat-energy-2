@@ -47,4 +47,14 @@
 .page__footer {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
 }
