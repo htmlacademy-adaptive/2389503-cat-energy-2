@@ -16,14 +16,21 @@
 
 .sub-products__title {
   @include font($secondary-font, 24px, 24px);
-
   margin: 0;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .sub-products__list {
   @include list-style-reset;
   margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .sub-products__heading {
