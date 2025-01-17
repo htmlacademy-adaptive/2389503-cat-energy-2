@@ -23,4 +23,14 @@
 
 .catalog__list {
   @include list-style-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+
+.product-card--all {
+  align-self: flex-end;
 }
