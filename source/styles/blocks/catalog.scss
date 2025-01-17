@@ -29,6 +29,12 @@
     flex-wrap: wrap;
     gap: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
 }
 
 .product-card--all {
