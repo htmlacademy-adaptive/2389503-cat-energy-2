@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    gap: 63px;
   }
 }
 
@@ -43,6 +43,13 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-right: 17px;
+  }
+}
+
+.catalog__item:nth-child(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
