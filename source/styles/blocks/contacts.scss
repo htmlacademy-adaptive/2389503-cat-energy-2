@@ -23,9 +23,7 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     max-width: 628px;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +31,7 @@
     top: 95px;
     left: 0;
     z-index: 100;
-    max-width: 565px;
+    width: 565px;
     padding-left: 80px;
     padding-right: 78px;
     background-color: $white;
