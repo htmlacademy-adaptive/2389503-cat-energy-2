@@ -25,12 +25,6 @@
 }
 
 .sub-products__cards-wrapper {
-  margin-bottom: 35px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -76,4 +70,6 @@
 
 .sub-products__gift {
   @include font($primary-font, 16px, 20px, $white);
+  margin-top: 0;
+  margin-bottom: 0;
 }
