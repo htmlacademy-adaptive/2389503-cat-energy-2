@@ -1,5 +1,5 @@
 .contacts {
-  @include block-color($dark, $light);
+  @include block-color;
 }
 
 .contacts__container {
@@ -17,6 +17,7 @@
 
 .contacts__text-wrapper {
   display: flex;
+  padding-top: 26px;
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
