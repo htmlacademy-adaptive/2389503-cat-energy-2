@@ -22,6 +22,15 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
     padding-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
@@ -29,8 +38,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 38px;
-    padding-right: 38px;
+    max-width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
