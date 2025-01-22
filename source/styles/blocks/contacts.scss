@@ -70,6 +70,20 @@
   }
 }
 
+.contacts__street {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.contacts__city {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .contacts__location {
   width: 100%;
   min-height: 362px;
