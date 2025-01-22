@@ -4,6 +4,25 @@
 
 .header__navigation-wrapper {
   @include container;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
+}
+
+.header__mobile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
@@ -11,8 +30,23 @@
 }
 
 .header__logo-link {
-  text-decoration: none;
   color: $darker;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.header__logo-link:active {
+  opacity: 0.6;
+}
+
+.header__logo-pic-mobile {
+  display: block;
 }
 
 .header__button {
@@ -20,18 +54,62 @@
   height: 24px;
   padding: 0;
   background-color: transparent;
+  background-image: url("../../icons/stack.svg#icon-burger");
+  background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.header__button--mobile-open {
-  background-image: url("../../icons/stack.svg#icon-burger");
-  background-size: 24px 24px;
-}
-
+/* Фоновая иконка бургера сменяется на иконку крестика  на кнопке при добавлении этого класса */
 .header__button--mobile-close {
+  width: 18px;
+  height: 18px;
   background-image: url("../../icons/stack.svg#icon-close");
   background-size: 18px 18px;
+}
+
+.header__navigation {
+  display: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+/* Выпадающий список навигации в шапке отображается при добалении этого коласса */
+.header__navigation-show {
+  display: block;
+}
+
+.header__navigation-list {
+  @include list-style-reset;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    flex-direction: row;
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 550px;
+    justify-content: flex-end;
+  }
+}
+
+.header__navigation-link {
+  @include font($secondary-font, 20px, 20px);
+  @include link;
 }

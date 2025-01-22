@@ -1,17 +1,42 @@
-// .sub-products {
-
-// }
+.sub-products {
+  @include block-color;
+}
 
 .sub-products__container {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .sub-products__title {
   @include font($secondary-font, 24px, 24px);
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.sub-products__cards-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .sub-products__list {
   @include list-style-reset;
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
 }
 
 .sub-products__heading {
@@ -25,6 +50,10 @@
 
 .sub-products__card {
   @include block-color($white, $primary-lighter);
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .sub-products__card::before {
@@ -40,4 +69,6 @@
 
 .sub-products__gift {
   @include font($primary-font, 16px, 20px, $white);
+  margin-top: 0;
+  margin-bottom: 0;
 }

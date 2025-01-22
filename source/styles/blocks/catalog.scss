@@ -4,12 +4,54 @@
 
 .catalog__container {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .catalog__title {
   @include font($secondary-font, 36px, 36px);
+
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .catalog__list {
   @include list-style-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 63px 80px;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    background-color: $light;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.catalog__item:nth-child(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.product-card--all {
+  align-self: flex-end;
 }

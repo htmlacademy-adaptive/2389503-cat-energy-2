@@ -4,10 +4,33 @@
 
 .features__container {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: 1440px) {
+    @include container-desktop;
+  }
 }
 
 .features__list {
   @include list-style-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.features__item {
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+  }
 }
 
 .features__item::before {

@@ -1,17 +1,40 @@
-// .programms {
+//.programms {
 
 // }
 
 .programms__container {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .programms__list {
   @include list-style-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .programms__card {
   @include block-color($black, $light);
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .programms__title {
@@ -19,21 +42,34 @@
   text-transform: uppercase;
 }
 
-.programms__card::before {
+.programms__card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
   content: "";
-  display: block;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.programms__card--cat-slim::before {
+.programms__card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: $primary;
+  border-radius: 50%;
+}
+
+.programms__card--cat-slim::after {
   width: 50px;
   height: 53px;
   background-image: url("../../icons/stack.svg#icon-cat-slim");
   background-size: 36px 50px;
 }
 
-.programms__card--cat-pro::before {
+.programms__card--cat-pro::after {
   width: 67px;
   height: 50px;
   background-image: url("../../icons/stack.svg#icon-cat-pro");
@@ -57,4 +93,12 @@
 
 .programms__link:hover {
   background-image: url("../../icons/stack.svg#icon-arrow-hover");
+}
+
+.programms__link:focus {
+  background-image: url("../../icons/stack.svg#icon-arrow-hover");
+}
+
+.programms__link:active {
+  opacity: 0.3;
 }
