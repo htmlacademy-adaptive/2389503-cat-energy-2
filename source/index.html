@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="функциональное питание для котов, CAT Energy, здоровое питание для кошек, питание для активных котов, корм для поддержания веса котов, витамины для кошек, магазин кошачьего корма, сбалансированный корм для котов">
   <meta name="description" content="Интернет-магазин CAT Energy предлагает функциональное питание для котов. У нас вы найдете сбалансированные корма, которые поддерживают активность и здоровье вашего питомца. Подберите идеальный рацион для вашей кошки.">
   <link rel="icon" href="favicon.ico">
@@ -18,27 +18,31 @@
 <body class="page__body">
   <header class="page__header header">
     <div class="header__navigation-wrapper">
-      <a class="header__logo-link" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-          <img class="header__logo-pic-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
-        </picture>
-        <img src="images/logo-text.svg" width="101" height="18" alt="Логотип в виде текста">
-      </a>
-      <button class="header__button header__button--mobile-open" type="button">
-        <span class="visually-hidden">Расскрытие главного меню</span>
-      </button>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Главная</a>
+      <div class="header__mobile-wrapper">
+        <a class="header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img class="header__logo-pic-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
+          </picture>
+          <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип в виде текста">
+        </a>
+        <!-- Кнопка с крестиком включается добавлением модификатором mobile-close класса header__button  -->
+        <button class="header__button" type="button">
+          <span class="visually-hidden">Расскрытие главного меню</span>
+        </button>
+      </div>
+      <!-- Для того чтобы навигация отобразилась необходимо добавить класс header__navigation-show -->
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="#">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Подбор программы</a>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -52,11 +56,13 @@
           <h2 class="promo__title">Функциональное питание&nbsp;для&nbsp;котов</h2>
           <p class="promo__lead">Занялся собой? Займись котом!</p>
         </div>
-        <picture>
-          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can@1x.png 1x, images/index-can@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet-1@1x.png 1x, images/index-can-tablet-1@2x.png 2x">
-          <img class="promo__image" src="images/index-can-mobile-1@1x.png" srcset="images/index-can-mobile-1@2x.png 2x" width="280" height="270" alt="Банка с едой Кэт энерджи Про с курицей и весом 500 грамм">
-        </picture>
+        <div class="promo__image-wrapper">
+          <picture>
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can@1x.png 1x, images/index-can@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet-1@1x.png 1x, images/index-can-tablet-1@2x.png 2x">
+            <img class="promo__image" src="images/index-can-mobile-1@1x.png" srcset="images/index-can-mobile-1@2x.png 2x" width="280" height="270" alt="Банка с едой Кэт энерджи Про с курицей и весом 500 грамм">
+          </picture>
+        </div>
         <a class="promo__link button" href="#">Подобрать&nbsp;программу</a>
       </div>
     </section>
@@ -64,19 +70,15 @@
       <div class="programms__container">
         <h2 class="visually-hidden">Варианты программ питания</h2>
         <ul class="programms__list">
-          <li class="programms__item">
-            <div class="programms__card programms__card--cat-slim">
-              <h3 class="programms__title">Похудение</h3>
-              <p class="programms__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="programms__link" href="#">Каталог slim</a>
-            </div>
+          <li class="programms__card programms__card--cat-slim">
+            <h3 class="programms__title">Похудение</h3>
+            <p class="programms__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="programms__link" href="#">Каталог slim</a>
           </li>
-          <li class="programms__item">
-            <div class="programms__card programms__card--cat-pro">
-              <h3 class="programms__title">Набор массы</h3>
-              <p class="programms__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="programms__link" href="#">Каталог pro</a>
-            </div>
+          <li class="programms__card programms__card--cat-pro">
+            <h3 class="programms__title">Набор массы</h3>
+            <p class="programms__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="programms__link" href="#">Каталог pro</a>
           </li>
         </ul>
       </div>
@@ -103,51 +105,58 @@
     <section class="page__example example">
       <div class="example__container">
         <h2 class="example__title">Живой&nbsp;пример</h2>
-        <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__info-column">
-          <p class="example__info"><span class="example__value">5 кг</span><span class="example__desc">снижение веса</span></p>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__data-wrapper">
+          <div class="example__modules-wrapper">
+            <p class="example__module">
+              <span class="example__module-value">5 кг</span>
+              <span class="example__module-desc">снижение веса</span>
+            </p>
+            <p class="example__module">
+              <span class="example__module-value">60 ДНЕЙ</span>
+              <span class="example__module-desc">затрачено времени</span>
+            </p>
+          </div>
+          <p class="example__meta">
+            <span class="example__value">Затраты на питание:</span>
+            <span class="example__desc">15 000 РУБ.</span>
+          </p>
         </div>
-        <div class="example__info-column">
-          <p class="example__info"><span class="example__value">60 ДНЕЙ</span><span class="example__desc">затрачено времени</span></p>
-        </div>
-        <div class="example__info-row">
-          <p class="example__info"><span class="example__value">Затраты на питание:</span><span class="example__desc">15 000 РУБ.</span> </p>
-        </div>
-        <div class="example__slider slider">
-          <div class="slider__wrapper">
+        <div class="example__slider">
+          <div class="example__slider-image-wrapper">
             <picture>
               <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
-              <img class="slider__image" src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" width="280" height="256" alt="Жирный кот">
+              <img class="example__slider-image" src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" width="280" height="256" alt="Жирный кот">
             </picture>
-            <picture>
-              <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
-              <img class="slider__image" src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" width="280" height="256" alt="Стройный кот">
-            </picture>
-
-            <button class="slider__button" type="button">
-              <svg class="slider__icon-thumb" width="40" height="40">
-                <use href="icons/stack.svg#icon-thumb"></use>
-              </svg>
-              <span class="visually-hidden">Ползунок</span>
-            </button>
           </div>
+          <picture>
+            <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+            <img class="example__slider-image" src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" width="280" height="256" alt="Стройный кот">
+          </picture>
+
+          <button class="example__slider-button" type="button">
+            <svg class="example__slider-icon-thumb" width="40" height="40">
+              <use href="icons/stack.svg#icon-thumb"></use>
+            </svg>
+            <span class="visually-hidden">Ползунок</span>
+          </button>
         </div>
       </div>
     </section>
     <section class="page__contacts contacts">
       <div class="contacts__container">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__text-wrapper">
           <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">
             ул. Большая<br>
-            Конюшенная, д. 19/8<br>
+            Конюшенная,&nbsp;д.&nbsp;19/8<br>
             Санкт-Петербург
           </address>
         </div>
-        <div class="contacts__location">
-          <img class="contacts__map" src="/" width="100" height="100" alt="Адрес на карте">
-        </div>
+      </div>
+      <div class="contacts__location">
+        <img class="contacts__map" src="/" width="100" height="100" alt="Адрес на карте">
       </div>
     </section>
   </main>

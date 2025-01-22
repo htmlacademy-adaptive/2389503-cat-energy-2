@@ -1,9 +1,9 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-// *,
-// *::before,
-// *::after {
-
-// }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   @include font;

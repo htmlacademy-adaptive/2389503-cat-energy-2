@@ -1,28 +1,212 @@
 .example {
   @include block-color($black, $gray-100);
+
+  @media (min-width: $tablet-width) {
+    @include block-color($black, $white);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include block-color($black, $gray-100);
+  }
 }
 
 .example__container {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+
+    display: grid;
+    grid-template-columns: 436px 560px;
+    grid-template-rows: auto 146px auto 69px auto;
+    column-gap: 224px;
+  }
 }
 
 .example__title {
   @include font($secondary-font, 36px, 40px);
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 60px, 60px);
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    grid-column: 1 / 2;
+  }
 }
 
-.example__value {
+.example__description {
+  @include font($primary-font, 14px, 18px, $gray-900);
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 16px, 24px, $gray-900);
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+}
+
+.example__data-wrapper {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 0;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+}
+
+.example__modules-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    gap: 43px;
+  }
+}
+
+.example__module {
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  margin: 0;
+  padding: 14px 19px 0;
+  border: 1px solid $gray-700;
+  border-radius: 3px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 15px 15px 0;
+  }
+}
+
+.example__module-value {
   @include font($secondary-font, 24px, 24px);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font ($secondary-font, 30px, 37px);
+  }
 }
 
-.example__info-row .example__value {
-  @include font($secondary-font, 14px, 20px);
-}
-
-.example__desc {
+.example__module-desc {
   @include font($primary-font, 12px, 12px, $gray-900);
+  position: relative;
+  top: 16px;
+  background-color: $gray-100;
+  border: 2px solid $gray-100;
+
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 14px, 14px, $gray-900);
+    top: 9px;
+    background-color: $white;
+    border-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-100;
+    border-color: $gray-100;
+  }
 }
 
-.example__info-row .example__desc {
+.example__meta {
   @include font($secondary-font, 14px, 20px);
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 20px, 20px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 62px;
+  }
+}
+
+.example__slider {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+}
+
+.example__slider-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+  }
+}
+
+.example__slider-image {
+  display: block;
+}
+
+.example__slider-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  color: $gray-800;
+  background-color: transparent;
+  border: none;
+}
+
+.example__slider-button:hover .slider__icon-thumb {
+  color: $primary;
+}
+
+.example__slider-button:focus .slider__icon-thumb {
+  color: $primary;
+}
+
+.example__slider-button:active .slider__icon-thumb {
+  color: $primary-darker;
+  opacity: 0.6;
 }

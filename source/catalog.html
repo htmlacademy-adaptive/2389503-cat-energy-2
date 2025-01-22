@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="функциональное питание для котов, CAT Energy, здоровое питание для кошек, питание для активных котов, корм для поддержания веса котов, витамины для кошек, магазин кошачьего корма, сбалансированный корм для котов">
   <meta name="description" content="Интернет-магазин CAT Energy предлагает функциональное питание для котов. У нас вы найдете сбалансированные корма, которые поддерживают активность и здоровье вашего питомца. Подберите идеальный рацион для вашей кошки.">
   <link rel="icon" href="favicon.ico">
@@ -18,34 +18,36 @@
 <body class="page__body">
   <header class="page__header header">
     <div class="header__navigation-wrapper">
-      <a class="header__logo-link" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-          <img class="header__logo-pic-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
-        </picture>
-        <img src="images/logo-text.svg" width="101" height="18" alt="Логотип в виде текста">
-      </a>
-      <button class="header__button header__button--mobile-open" type="button">
-        <span class="visually-hidden">Расскрытие главного меню</span>
-      </button>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+      <div class="header__mobile-wrapper">
+        <a class="header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img class="header__logo-pic-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
+          </picture>
+          <img src="images/logo-text.svg" width="101" height="18" alt="Логотип в виде текста">
+        </a>
+        <button class="header__button" type="button">
+          <span class="visually-hidden">Расскрытие главного меню</span>
+        </button>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Каталог продукции</a>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="#">Каталог продукции</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Подбор программы</a>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="page__main">
-    <section class="catalog">
+    <section class="page__catalog catalog">
       <div class="catalog__container">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
@@ -213,45 +215,47 @@
         </ul>
       </div>
     </section>
-    <section class="sub-products">
+    <section class="page__sub-products sub-products">
       <div class="sub-products__container">
         <h2 class="sub-products__title">Дополнительные товары</h2>
-        <ul class="sub-products__list">
-          <li class="sub-products__item">
-            <h3 class="sub-products__heading">Сахарозаменитель</h3>
-            <p class="sub-products__desc">
-              <span class="sub-products__value">1 упаковка (100 г)</span><span class="sub-products__price">200 &#8381;</span>
-            </p>
-            <a class="sub-products__button button" href="#">Заказать</a>
-          </li>
-          <li class="sub-products__item">
-            <h3 class="sub-products__heading">Питьевая вода</h3>
-            <p class="sub-products__desc">
-              <span class="sub-products__value">5 литров</span><span class="sub-products__price">50 &#8381;</span>
-            </p>
-            <a class="sub-products__button button" href="#">Заказать</a>
-          </li>
-          <li class="sub-products__item">
-            <h3 class="sub-products__heading">Молоко</h3>
-            <p class="sub-products__desc">
-              <span class="sub-products__value">1 литр</span><span class="sub-products__price">100 &#8381;</span>
-            </p>
-            <a class="sub-products__button button" href="#">Заказать</a>
-          </li>
-          <li class="sub-products__item">
-            <h3 class="sub-products__heading">Витамины</h3>
-            <p class="sub-products__desc">
-              <span class="sub-products__value">1 упаковка (30 г)</span><span class="sub-products__price">300 &#8381;</span>
-            </p>
-            <a class="sub-products__button button" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div class="sub-products__card">
-          <p class="sub-products__gift">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="sub-products__cards-wrapper">
+          <ul class="sub-products__list">
+            <li class="sub-products__item">
+              <h3 class="sub-products__heading">Сахарозаменитель</h3>
+              <p class="sub-products__desc">
+                <span class="sub-products__value">1 упаковка (100 г)</span><span class="sub-products__price">200 &#8381;</span>
+              </p>
+              <a class="sub-products__button button" href="#">Заказать</a>
+            </li>
+            <li class="sub-products__item">
+              <h3 class="sub-products__heading">Питьевая вода</h3>
+              <p class="sub-products__desc">
+                <span class="sub-products__value">5 литров</span><span class="sub-products__price">50 &#8381;</span>
+              </p>
+              <a class="sub-products__button button" href="#">Заказать</a>
+            </li>
+            <li class="sub-products__item">
+              <h3 class="sub-products__heading">Молоко</h3>
+              <p class="sub-products__desc">
+                <span class="sub-products__value">1 литр</span><span class="sub-products__price">100 &#8381;</span>
+              </p>
+              <a class="sub-products__button button" href="#">Заказать</a>
+            </li>
+            <li class="sub-products__item">
+              <h3 class="sub-products__heading">Витамины</h3>
+              <p class="sub-products__desc">
+                <span class="sub-products__value">1 упаковка (30 г)</span><span class="sub-products__price">300 &#8381;</span>
+              </p>
+              <a class="sub-products__button button" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="sub-products__card">
+            <p class="sub-products__gift">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="subscribe">
+    <section class="page__subscribe subscribe">
       <div class="subscribe__container">
         <h2 class="subscribe__title">Акции и новинки</h2>
         <div class="subscribe__wrapper">
@@ -264,18 +268,20 @@
         </div>
       </div>
     </section>
-    <section class="page__contacts contacts">
+    <section class="page__contacts contacts contacts--additional-color">
       <div class="contacts__container">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__text-wrapper">
-          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">
-            <p>ул. Большая Конюшенная <br> д. 19/8 <br> Санкт-Петербург</p>
+            ул. Большая<br>
+            Конюшенная,&nbsp;д.&nbsp;19/8<br>
+            Санкт-Петербург
           </address>
         </div>
-        <div class="contacts__location">
-          <img class="contacts__map" src="/" width="100" height="100" alt="Местоположение с точкой">
-        </div>
+      </div>
+      <div class="contacts__location">
+        <img class="contacts__map" src="/" width="100" height="100" alt="Адрес на карте">
       </div>
     </section>
   </main>

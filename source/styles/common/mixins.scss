@@ -21,6 +21,21 @@
   background-color: $bg-color;
 }
 
+@mixin container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@mixin container-tablet {
+  width: 708px;
+  margin: 0 auto;
+}
+
+@mixin container-desktop {
+  width: 1220px;
+  margin: 0 auto;
+}
+
 @mixin link {
   text-transform: uppercase;
   text-decoration: none;
@@ -30,9 +45,4 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-@mixin container {
-  width: 280px;
-  margin: 0 auto;
 }
