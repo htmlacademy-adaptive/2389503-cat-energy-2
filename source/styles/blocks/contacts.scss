@@ -2,6 +2,14 @@
   @include block-color;
 }
 
+.contacts--additional-color {
+  background-color: $light;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
 .contacts__container {
   @include container;
 
