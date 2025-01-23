@@ -18,35 +18,33 @@
 <body class="page__body">
   <header class="page__header header">
     <div class="header__navigation-wrapper">
-      <div class="header__mobile-wrapper">
-        <a class="header__logo-link" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-            <img class="header__logo-pic-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
-          </picture>
-          <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип в виде текста">
-        </a>
-        <!-- Кнопка с крестиком включается добавлением модификатором mobile-close класса header__button  -->
-        <button class="header__toggle-menu" type="button">
-          <span class="visually-hidden">Расскрытие главного меню</span>
-        </button>
-      </div>
-      <!-- Для того чтобы навигация отобразилась необходимо добавить класс header__navigation-show -->
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Главная</a>
-          </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <a class="header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+          <img class="header__logo-pic-mobile" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт Энерджи">
+        </picture>
+        <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип в виде текста">
+      </a>
+      <!-- Кнопка с крестиком включается добавлением модификатором mobile-close класса header__button  -->
+      <button class="header__toggle-menu header__toggle-menu--closed " type="button">
+        <span class="visually-hidden">Расскрытие главного меню</span>
+      </button>
     </div>
+    <!-- Для того чтобы навигация отобразилась необходимо добавить класс header__navigation-show -->
+    <nav class="header__navigation header__navigation-show">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">Главная</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page__main">
     <section class="page__promo promo">
