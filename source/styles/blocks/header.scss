@@ -53,17 +53,21 @@
   width: 24px;
   height: 24px;
   padding: 0;
-  background-color: transparent;
-  background-image: url("../../icons/stack.svg#icon-burger");
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-color: inherit;
   border: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.header__toggle--opened {
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#icon-burger");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 /* Фоновая иконка бургера сменяется на иконку крестика  на кнопке при добавлении этого класса */
