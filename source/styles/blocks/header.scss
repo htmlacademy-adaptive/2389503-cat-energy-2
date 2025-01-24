@@ -1,5 +1,7 @@
 .header {
   @include block-color;
+
+  position: relative;
 }
 
 .header__container {
@@ -20,8 +22,11 @@
   }
 }
 
-.header__logo {
-  text-decoration: none;
+.header__mobile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .header__logo-link {
@@ -71,7 +76,6 @@
 
 .header__navigation {
   display: none;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -79,16 +83,18 @@
 }
 
 /* Выпадающий список навигации в шапке отображается при добалении этого класса */
-.header__navigation--show {
+.header__navigation--open {
   display: block;
 }
 
 .header__navigation-list {
   @include block-color;
   @include list-style-reset;
+
   position: absolute;
-  top: 14px;
-  width: 100%;
+  top: 66px;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   text-align: center;
