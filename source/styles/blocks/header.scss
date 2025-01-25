@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.header__container {
+.header__navigation-wrapper {
   @include container;
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,12 @@
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
+  }
+}
+
+.header__navigation-wrapper--nojs .header__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
