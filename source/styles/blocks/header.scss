@@ -83,6 +83,11 @@
   background-size: 18px 18px;
 }
 
+.header__navigation--closed .header__navigation-list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
 
 /* Выпадающее меню */
 
