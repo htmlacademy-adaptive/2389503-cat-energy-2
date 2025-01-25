@@ -49,6 +49,8 @@
   display: block;
 }
 
+/* Переключатель */
+
 .header__toggle {
   width: 24px;
   height: 24px;
@@ -62,6 +64,8 @@
   }
 }
 
+/* Иконка переключателя - бургер */
+
 .header__toggle--opened {
   background-color: transparent;
   background-image: url("../../icons/stack.svg#icon-burger");
@@ -70,7 +74,8 @@
   background-position: 50% 50%;
 }
 
-/* Фоновая иконка бургера сменяется на иконку крестика  на кнопке при добавлении этого класса */
+/* Иконка переключателя - крестик */
+
 .header__toggle--closed {
   width: 18px;
   height: 18px;
@@ -79,7 +84,7 @@
 }
 
 
-/* Выпадающий список навигации в шапке отображается при добалении этого класса */
+/* Выпадающее меню */
 
 .header__navigation-list {
   @include block-color;
