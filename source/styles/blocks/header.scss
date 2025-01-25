@@ -89,19 +89,23 @@
   }
 }
 
+.header__navigation--opened .header__navigation-list {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /* Выпадающее меню */
 
 .header__navigation-list {
   @include block-color;
   @include list-style-reset;
-
-  position: absolute;
-  top: 66px;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     position: static;
