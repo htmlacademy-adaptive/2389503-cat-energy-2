@@ -16,9 +16,9 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header header">
-    <div class="header__navigation-wrapper header__navigation-wrapper--nojs">
-      <div class="header__mobile-wrapper">
+  <header class="page__header header nojs">
+    <div class="header__container">
+      <div class="header__mobile-menu">
         <a class="header__logo-link" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
@@ -33,21 +33,22 @@
           <span class="visually-hidden">Расскрытие главного меню</span>
         </button>
       </div>
-      <!-- header__navigation- -closed - Закрываем выпадающее меню -->
-      <nav class="header__navigation header__navigation--opened">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Главная</a>
+      <!-- header__main-menu- -closed - Закрываем выпадающее меню -->
+      <nav class="header__main-menu  header__main-menu--opened">
+        <ul class="header__main-menu-list">
+          <li class="header__main-menu-item">
+            <a class="header__main-menu-link" href="#">Главная</a>
           </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-link" href="catalog.html">Каталог продукции</a>
+          <li class="header__main-menu-item">
+            <a class="header__main-menu-link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Подбор программы</a>
+          <li class="header__main-menu-item">
+            <a class="header__main-menu-link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </div>
+
   </header>
   <main class="page__main">
     <section class="page__promo promo">
