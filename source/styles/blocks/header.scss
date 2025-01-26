@@ -4,6 +4,24 @@
   position: relative;
 }
 
+.header--nojs .header__toggle {
+  display: none;
+}
+
+.header--nojs .header__container {
+  display: block;
+}
+
+.header--nojs .header__mobile-menu {
+  margin-bottom: 14px;
+}
+
+.header--nojs .header__main-menu-list {
+  position: relative;
+  top: auto;
+  margin-bottom: -14px;
+}
+
 .header__container {
   @include container;
   display: flex;
@@ -88,7 +106,6 @@
 .header__main-menu-list {
   @include block-color;
   @include list-style-reset;
-
   position: absolute;
   top: 66px;
   left: 0;
