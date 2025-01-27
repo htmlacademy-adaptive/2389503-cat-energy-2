@@ -95,6 +95,10 @@
   @media (min-width: $tablet-width) {
     gap: 13px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }
 
 .header__logo-link:hover {
@@ -107,6 +111,13 @@
 
 .header__logo-pic-mobile {
   display: block;
+}
+
+.header__logo-text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }
 
 /* Переключатель */
