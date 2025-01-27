@@ -1,6 +1,10 @@
 .promo {
   @include block-color($black, $primary-lighter);
 
+  // background-image: url("../../images/index-background-desktop-1@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: 50% 50%;
+
   @media (min-width: $tablet-width) {
     @include block-color();
   }
@@ -8,9 +12,9 @@
 
 .promo__container {
   @include container;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   text-align: center;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     @include container-tablet;
@@ -37,6 +41,9 @@
 .promo__title {
   @include font($secondary-font, 36px, 36px, $white);
 
+  margin-top: 0;
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 60px, 60px, $black);
   }
@@ -44,6 +51,9 @@
 
 .promo__lead {
   @include font($secondary-font, 14px, 14px, $white);
+
+  margin-top: 0;
+  margin-bottom: 29px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -72,6 +82,9 @@
 }
 
 .promo__link {
+  margin-top: 3px;
+  padding: 10px 30px;
+
   @media (min-width: $tablet-width) {
     order: 2;
     z-index: 10;
