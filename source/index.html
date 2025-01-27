@@ -17,7 +17,7 @@
 
 <body class="page__body">
   <!-- Добавлением header- -nojs - реализация работы меню без JS -->
-  <header class="page__header header">
+  <header class="page__header header header--nojs">
     <div class="header__container">
       <div class="header__mobile-menu">
         <a class="header__logo-link" href="index.html">
@@ -211,11 +211,25 @@
       </a>
     </div>
   </footer>
-  <!-- <script>
-    let navHeader = document.querySelector('.header');
+  <script>
+    let headerNojs = document.querySelector('.header');
+    let mainMenu = document.querySelector('.header__main-menu');
     let navToggle = document.querySelector('.header__toggle');
-    navHeader.classList.remove('.header--nojs');
-  </script> -->
+    headerNojs.classList.remove('header--nojs');
+    navToggle.addEventListener('click', function () {
+      if (mainMenu.classList.contains('header__main-menu--closed')) {
+        mainMenu.classList.remove('header__main-menu--closed');
+        navToggle.classList.remove('header__toggle--closed');
+        mainMenu.classList.add('header__main-menu--opened');
+        navToggle.classList.add('header__toggle--opened');
+      } else {
+        mainMenu.classList.add('header__main-menu--closed');
+        navToggle.classList.add('header__toggle--closed');
+        mainMenu.classList.remove('header__main-menu--opened');
+        navToggle.classList.remove('header__toggle--opened');
+      }
+    })
+  </script>
 </body>
 
 </html>
