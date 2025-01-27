@@ -81,7 +81,7 @@
   align-items: center;
   width: 100%;
 
-  @media ($tablet-width) {
+  @media (min-width: $tablet-width) {
     justify-content: flex-start;
     width: auto;
   }
