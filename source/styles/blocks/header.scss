@@ -145,6 +145,10 @@
   @media (min-width: $tablet-width) {
     width: 436px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
 }
 
 .header__main-menu-list {
@@ -155,12 +159,7 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    gap: 33px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 550px;
-    justify-content: flex-end;
+    gap: 32px;
   }
 }
 
@@ -187,6 +186,10 @@
     border: none;
     font-size: 18px;
     line-height: 24px;
-    text-align: middle;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
