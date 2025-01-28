@@ -90,6 +90,16 @@
   margin-bottom: 38px;
 }
 
+.programms__text::before {
+  position: absolute;
+  bottom: 57px;
+  left: 20px;
+  content: " ";
+  width: 240px;
+  height: 1px;
+  background-color: $gray-500;
+}
+
 .programms__link {
   @include font($secondary-font, 16px, 16px);
   @include link;
