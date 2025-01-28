@@ -19,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
   }
 }
@@ -36,7 +37,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
     margin-bottom: 0;
+    padding-right: 61px;
+    padding-bottom: 55px;
   }
 }
 
@@ -118,6 +122,13 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
     font-size: 36px;
     line-height: 36px;
   }
