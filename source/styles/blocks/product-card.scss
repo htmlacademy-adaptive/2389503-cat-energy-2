@@ -1,11 +1,15 @@
 .product-card {
   position: relative;
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+.product-card__container {
+  @include container;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 107px auto;
   row-gap: 17px;
-  padding-top: 20px;
-  padding-bottom: 25px;
 }
 
 .product-card__image-wrapper {
@@ -50,7 +54,7 @@
 .product-card--all::before {
   position: absolute;
   top: 40px;
-  left: 125px;
+  left: 200px;
   content: " ";
   box-sizing: border-box;
   width: 30px;
@@ -61,7 +65,7 @@
 .product-card--all::after {
   position: absolute;
   top: 40px;
-  left: 125px;
+  left: 200px;
   content: " ";
   box-sizing: border-box;
   width: 30px;
