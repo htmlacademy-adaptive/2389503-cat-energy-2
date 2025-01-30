@@ -145,6 +145,7 @@
 
 .header__main-menu {
   @include block-color;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     width: 436px;
