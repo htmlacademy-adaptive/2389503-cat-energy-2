@@ -2,6 +2,10 @@
   @include block-color;
   position: relative;
   border-bottom: 1px solid $gray-500;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
