@@ -12,6 +12,7 @@
 
 .product-card__container {
   @include container;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 17px;
@@ -97,23 +98,25 @@
   padding-bottom: 24px;
 }
 
-.product-card--all::before {
+.product-card--all .product-card__container::before {
   position: absolute;
-  top: 40px;
-  left: 167px;
+  top: -38px;
+  left: 50%;
   content: " ";
   width: 30px;
   height: 2px;
+  margin-left: -15px;
   background-color: $gray-600;
 }
 
-.product-card--all::after {
+.product-card--all .product-card__container::after {
   position: absolute;
-  top: 40px;
-  left: 167px;
+  top: -38px;
+  left: 50%;
   content: " ";
   width: 30px;
   height: 2px;
+  margin-left: -15px;
   background-color: $gray-600;
   transform: rotate(90deg);
 }
