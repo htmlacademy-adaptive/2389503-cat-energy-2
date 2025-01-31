@@ -17,7 +17,7 @@
   gap: 17px;
 
   @media (min-width: $tablet-width) {
-    gap: 37px;
+    gap: 40px;
     width: 100%;
     margin: 0;
   }
@@ -120,6 +120,10 @@
   display: flex;
   min-height: 207px;
   padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .product-card--all .product-card__container {
