@@ -178,17 +178,32 @@
 .product-card--all .product-card__info-wrapper {
   text-align: center;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    align-self: center;
+  }
 }
 
 .product-card--all .product-card__title {
   @include font($secondary-font, 16px, 20px, $darker);
   max-width: 100%;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product-card--all .product-card__text {
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .product-card--all .product-card__link {
