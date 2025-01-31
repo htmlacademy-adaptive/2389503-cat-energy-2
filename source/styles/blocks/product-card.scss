@@ -93,6 +93,7 @@
 
 .product-card--all {
   display: flex;
+  min-height: 207px;
   padding-bottom: 24px;
 }
 
@@ -101,7 +102,6 @@
   top: 40px;
   left: 167px;
   content: " ";
-  box-sizing: border-box;
   width: 30px;
   height: 2px;
   background-color: $gray-600;
@@ -112,7 +112,6 @@
   top: 40px;
   left: 167px;
   content: " ";
-  box-sizing: border-box;
   width: 30px;
   height: 2px;
   background-color: $gray-600;
