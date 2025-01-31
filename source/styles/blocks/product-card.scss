@@ -136,6 +136,10 @@
 .product-card--all .product-card__container {
   gap: 21px;
   align-self: flex-end;
+
+  @media (min-width: $tablet-width) {
+    gap: 82px;
+  }
 }
 
 .product-card--all .product-card__container::before {
@@ -147,6 +151,11 @@
   height: 2px;
   margin-left: -15px;
   background-color: $gray-600;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    margin-left: -30px;
+  }
 }
 
 .product-card--all .product-card__container::after {
@@ -159,6 +168,11 @@
   margin-left: -15px;
   background-color: $gray-600;
   transform: rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    margin-left: -30px;
+  }
 }
 
 .product-card--all .product-card__info-wrapper {
