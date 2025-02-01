@@ -14,12 +14,21 @@
   }
 }
 
+.features__title {
+  @include font($secondary-font, 36px, 40px);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
 .features__list {
   @include list-style-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +37,10 @@
 }
 
 .features__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
   @media (min-width: $tablet-width) {
     max-width: 250px;
   }
@@ -60,10 +73,8 @@
   background-image: url("../../icons/stack.svg#icon-clock");
 }
 
-.features__title {
-  @include font($secondary-font, 36px, 40px);
-}
-
 .features__desc {
   @include font($primary-font, 14px, 18px, $gray-900);
+  max-width: 200px;
+  margin: 0;
 }
