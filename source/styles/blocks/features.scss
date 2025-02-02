@@ -36,6 +36,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    counter-reset: new-counter;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +57,7 @@
     min-height: 280px;
     padding-top: 40px;
     padding-bottom: 57px;
+    counter-increment: new-counter;
   }
 }
 
@@ -81,7 +83,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    content: "1";
+    content: counter(new-counter);
     display: block;
     z-index: -1;
   }
