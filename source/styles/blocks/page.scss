@@ -45,6 +45,18 @@
 
 .page__features {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+    margin-bottom: 0;
+    border-bottom: 1px solid $gray-400;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .page__example {

@@ -38,10 +38,6 @@
     justify-content: space-between;
     counter-reset: new-counter;
   }
-
-  @media (min-width: $desktop-width) {
-    justify-content: space-between;
-  }
 }
 
 .features__item {
