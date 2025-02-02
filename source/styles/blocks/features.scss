@@ -105,10 +105,11 @@
 
 .features__desc {
   @include font($primary-font, 14px, 18px, $gray-900);
-  width: 245px;
+  max-width: 200px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    max-width: 245px;
     font-size: 16px;
     line-height: 24px;
   }
