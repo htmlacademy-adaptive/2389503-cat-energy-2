@@ -112,6 +112,13 @@
   align-items: center;
   gap: 48px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
+    padding: 57px 125px 60px 77px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 245px;
   }
@@ -126,6 +133,11 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 78px 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 82px;
+  }
 }
 
 .sub-products__gift-text {
@@ -133,4 +145,9 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 161px;
+    text-align: left;
+  }
 }
