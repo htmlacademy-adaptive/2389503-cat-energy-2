@@ -21,6 +21,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
@@ -35,6 +37,10 @@
   @include list-style-reset;
   margin-bottom: 35px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 896px;
   }
@@ -44,10 +50,21 @@
   padding-top: 13px;
   padding-bottom: 19px;
   border-top: 1px solid $gray-700;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    border: 1px solid $gray-700;
+  }
 }
 
 .sub-products__item:last-child {
   border-bottom: 1px solid $gray-700;
+}
+
+.sub-products__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .sub-products__heading {
