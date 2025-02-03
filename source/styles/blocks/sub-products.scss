@@ -67,17 +67,35 @@
   }
 }
 
+.sub-products__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .sub-products__heading {
   @include font($secondary-font, 16px, 16px, $dark);
   margin-top: 0;
   margin-bottom: 13px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .sub-products__desc {
   @include font($primary-font, 14px, 14px, $gray-900);
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 49px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .sub-products__button {
