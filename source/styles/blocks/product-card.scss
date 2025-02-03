@@ -170,17 +170,16 @@
 .product-card--all .product-card__container::before {
   position: absolute;
   top: -38px;
-  left: 50%;
+  left: calc(50% - 15px);
   content: " ";
   width: 30px;
   height: 2px;
-  margin-left: -15px;
   background-color: $gray-600;
 
   @media (min-width: $tablet-width) {
     top: -80px;
     width: 60px;
-    margin-left: -30px;
+    left: calc(50% - 30px);
   }
 
   @media (min-width: $tablet-width) {
@@ -191,18 +190,17 @@
 .product-card--all .product-card__container::after {
   position: absolute;
   top: -38px;
-  left: 50%;
+  left: calc(50% - 15px);
   content: " ";
   width: 30px;
   height: 2px;
-  margin-left: -15px;
   background-color: $gray-600;
   transform: rotate(90deg);
 
   @media (min-width: $tablet-width) {
     top: -80px;
     width: 60px;
-    margin-left: -30px;
+    left: calc(50% - 30px);
   }
 
   @media (min-width: $tablet-width) {
