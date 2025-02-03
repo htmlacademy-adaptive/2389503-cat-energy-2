@@ -17,7 +17,7 @@
 .sub-products__title {
   @include font($secondary-font, 24px, 24px);
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
@@ -33,22 +33,42 @@
 
 .sub-products__list {
   @include list-style-reset;
+  margin-bottom: 35px;
 
   @media (min-width: $desktop-width) {
     width: 896px;
   }
 }
 
+.sub-products__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid $gray-700;
+}
+
+.sub-products__item:last-child {
+  border-bottom: 1px solid $gray-700;
+}
+
 .sub-products__heading {
   @include font($secondary-font, 16px, 16px, $dark);
+  margin-top: 0;
+  margin-bottom: 13px;
   text-transform: uppercase;
 }
 
 .sub-products__desc {
   @include font($primary-font, 14px, 14px, $gray-900);
+  display: flex;
+  justify-content: space-between;
 }
 
-.sub-products__card {
+.sub-products__button {
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.sub-products__gift-card {
   @include block-color($white, $primary-lighter);
 
   @media (min-width: $desktop-width) {
@@ -56,7 +76,7 @@
   }
 }
 
-.sub-products__card::before {
+.sub-products__gift-card::before {
   content: "";
   display: block;
   width: 78px;
@@ -67,7 +87,7 @@
   background-size: 78px 80px;
 }
 
-.sub-products__gift {
+.sub-products__gift-text {
   @include font($primary-font, 16px, 20px, $white);
   margin-top: 0;
   margin-bottom: 0;
