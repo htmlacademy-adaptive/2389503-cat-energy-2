@@ -24,6 +24,12 @@
     font-size: 32px;
     line-height: 32px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .sub-products__cards-wrapper {
@@ -54,6 +60,13 @@
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px;
     border: 1px solid $gray-700;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 15px 1px 17px;
+    border: none;
+    border-top: 1px solid $gray-700;
   }
 }
 
