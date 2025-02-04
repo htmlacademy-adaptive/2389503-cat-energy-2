@@ -1,7 +1,0 @@
-.gift-card {
-  @include block-color($black, $primary-lighter);
-}
-
-.gift-card__desc {
-  @include font($primary-font, 16px, 20px, $white);
-}

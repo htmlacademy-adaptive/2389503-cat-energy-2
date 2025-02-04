@@ -1,5 +1,5 @@
 .sub-products {
-  @include block-color;
+  overflow: hidden;
 }
 
 .sub-products__container {
@@ -16,19 +16,50 @@
 
 .sub-products__title {
   @include font($secondary-font, 24px, 24px);
+  position: relative;
+  display: inline-block;
   margin: 0;
   margin-bottom: 35px;
+  padding-right: 40px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    padding-left: 40px;
     font-size: 32px;
     line-height: 32px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 80px;
+    margin-left: -40px;
     font-size: 40px;
     line-height: 40px;
+  }
+}
+
+
+.sub-products__title::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 800%;
+  height: 2px;
+  background-color: $primary;
+  z-index: -1;
+}
+
+.sub-products__title::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    width: 800%;
+    height: 2px;
+    background-color: $primary;
+    z-index: -1;
   }
 }
 
