@@ -83,12 +83,18 @@
 }
 
 .sub-products__text-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 630px;
+    margin-bottom: 0;
   }
 }
 
@@ -113,11 +119,17 @@
   @include font($primary-font, 14px, 14px, $gray-900);
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     gap: 49px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 410px;
   }
 }
 
