@@ -64,6 +64,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 1px 17px;
     border: none;
     border-top: 1px solid $gray-700;
@@ -84,6 +86,10 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  @media (min-width: $desktop-width) {
+    max-width: 630px;
+  }
 }
 
 .sub-products__heading {
@@ -96,6 +102,10 @@
     margin-bottom: 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 200px;
   }
 }
 
@@ -114,6 +124,11 @@
 .sub-products__button {
   padding: 10px 15px;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    max-width: 244px;
+    min-height: 40px;
+  }
 }
 
 .sub-products__gift-card {
