@@ -113,6 +113,7 @@
 
 .subscribe__button {
   @include font($secondary-font, 20px, 26px, $white);
+  padding: 15px;
 
   @media (min-width: $tablet-width) {
     width: 256px;
