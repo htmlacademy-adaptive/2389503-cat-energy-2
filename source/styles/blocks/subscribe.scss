@@ -85,9 +85,31 @@
   }
 }
 
-// .subscribe__field {
-//   flex-grow: 1;
-// }
+.subscribe__field {
+  @include font($secondary-font, 20px, 30px, $gray-900);
+  padding: 12px 13px;
+  background-color: $white;
+  border: 1px solid $gray-300;
+  text-transform: uppercase;
+}
+
+.subscribe__field:hover {
+  border-color: $gray-700;
+}
+
+.subscribe__field:focus {
+  outline: 2px solid $gray-900;
+  border-color: $gray-900;
+}
+
+.subscribe__field:invalid {
+  box-shadow: none;
+}
+
+.subscribe__field:focus:invalid {
+  outline-color: $invalid;
+  border-color: $invalid;
+}
 
 .subscribe__button {
   @include font($secondary-font, 20px, 26px, $white);
