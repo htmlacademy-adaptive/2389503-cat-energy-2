@@ -74,21 +74,6 @@
   }
 }
 
-.page__footer {
-  padding-top: 20px;
-  padding-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 55px;
-    padding-bottom: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 66px;
-    padding-bottom: 66px;
-  }
-}
-
 .page__subscribe {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -101,5 +86,20 @@
   @media (min-width: $desktop-width) {
     padding-top: 96px;
     padding-bottom: 104px;
+  }
+}
+
+.page__footer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 }

@@ -38,6 +38,19 @@
   }
 }
 
+.subscribe__title::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    width: 800%;
+    height: 2px;
+    background-color: $primary;
+    z-index: -1;
+  }
+}
+
 .subscribe__title::after {
   position: absolute;
   top: 50%;
@@ -54,8 +67,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    max-width: 632px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +104,10 @@
   background-color: $white;
   border: 1px solid $gray-300;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .subscribe__field:hover {
