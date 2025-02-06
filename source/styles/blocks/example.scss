@@ -104,7 +104,15 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    padding: 15px 15px 0;
+    min-height: 72px;
+    padding: 15px 9px 0;
+  }
+}
+
+.example__module:first-of-type {
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+    padding-left: 22px;
   }
 }
 
@@ -115,6 +123,7 @@
 
   @media (min-width: $tablet-width) {
     @include font ($secondary-font, 30px, 37px);
+    margin-bottom: -12px;
   }
 }
 
@@ -130,14 +139,14 @@
 
   @media (min-width: $tablet-width) {
     @include font($primary-font, 14px, 14px, $gray-900);
-    top: 9px;
+    top: 21px;
+    padding-right: 9px;
+    padding-left: 8px;
     background-color: $white;
-    border-color: $white;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $gray-100;
-    border-color: $gray-100;
   }
 }
 
