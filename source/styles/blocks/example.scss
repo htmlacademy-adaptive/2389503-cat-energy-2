@@ -121,8 +121,9 @@
 .example__module-desc {
   @include font($primary-font, 12px, 12px, $gray-900);
   position: relative;
-  top: 16px;
+  top: 17px;
   align-self: center;
+  margin-top: -7px;
   padding-right: 14px;
   padding-left: 14px;
   z-index: 5;
@@ -131,6 +132,7 @@
   @media (min-width: $tablet-width) {
     @include font($primary-font, 14px, 14px, $gray-900);
     top: 10px;
+    margin-top: 0;
     padding-right: 9px;
     padding-left: 8px;
     background-color: $white;
@@ -162,8 +164,6 @@
 }
 
 .example__slider {
-  position: relative;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
@@ -175,18 +175,17 @@
   }
 }
 
-.example__slider-image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
+.example__slider-wrapper {
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    left: 55px;
-  }
 
-  @media (min-width: $desktop-width) {
-    left: 0;
-  }
+  // @media (min-width: $tablet-width) {
+  //   left: 55px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   left: 0;
+  // }
 }
 
 .example__slider-image {
