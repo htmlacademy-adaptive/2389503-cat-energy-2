@@ -109,29 +109,20 @@
   }
 }
 
-.example__module:first-of-type {
-  @media (min-width: $tablet-width) {
-    padding-right: 22px;
-    padding-left: 22px;
-  }
-}
-
 .example__module-value {
   @include font($secondary-font, 24px, 24px);
   text-transform: uppercase;
-  margin-bottom: -7px;
 
   @media (min-width: $tablet-width) {
     @include font ($secondary-font, 30px, 37px);
-    margin-bottom: -12px;
   }
 }
 
 .example__module-desc {
   @include font($primary-font, 12px, 12px, $gray-900);
   position: relative;
-  top: 15px;
-  display: inline-block;
+  top: 16px;
+  align-self: center;
   padding-right: 14px;
   padding-left: 14px;
   z-index: 5;
@@ -139,7 +130,7 @@
 
   @media (min-width: $tablet-width) {
     @include font($primary-font, 14px, 14px, $gray-900);
-    top: 21px;
+    top: 10px;
     padding-right: 9px;
     padding-left: 8px;
     background-color: $white;
