@@ -254,8 +254,7 @@
 }
 
 .example__slider-control:active {
-  background-color: $primary-darker;
-  opacity: 0.6;
+  background-color: $primary-darker-alpha;
 }
 
 .example__slider-control:hover::before {
@@ -267,9 +266,9 @@
 }
 
 .example__slider-control:active::before {
-  border-color: $primary-darker;
+  border-color: $primary-darker-alpha;
 }
 
 .example__slider-control:active::after {
-  background-color: $primary-darker;
+  background-color: $primary-darker-alpha;
 }
