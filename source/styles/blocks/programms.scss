@@ -197,14 +197,14 @@
   @include link;
   display: inline-block;
   padding: 4px 47px 4px 0;
-  background-image: url("../../icons/stack.svg#icon-arrow");
+  background-image: url("../../icons/stack.svg#icon-arrow-short");
   background-repeat: no-repeat;
   background-size: 24px 12px;
-  background-position: right center;
+  background-position: 95px center;
 
   @media (min-width: $tablet-width) {
     padding-right: 57px;
-    background-size: 32px 10px;
+    background-position: 130px center;
     font-size: 20px;
     line-height: 30px;
   }
@@ -215,11 +215,13 @@
 }
 
 .programms__link:hover {
-  background-image: url("../../icons/stack.svg#icon-arrow-hover");
+  background-image: url("../../icons/stack.svg#icon-arrow-long");
+  background-size: 32px 12px;
 }
 
 .programms__link:focus {
-  background-image: url("../../icons/stack.svg#icon-arrow-hover");
+  background-image: url("../../icons/stack.svg#icon-arrow-long");
+  background-size: 32px 12px;
 }
 
 .programms__link:active {
