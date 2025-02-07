@@ -183,12 +183,30 @@
   position: absolute;
   inset: 0;
   width: 50%;
+  background-color: $gray-100;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-100;
+  }
 }
 
 .example__slider-image-after-container {
-  width: 50%;
+  width: 100%;
+  background-color: $gray-100;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-100;
+  }
 }
 
 .example__slider-image {
