@@ -177,22 +177,18 @@
 
 .example__slider-wrapper {
   position: relative;
-
-
-  // @media (min-width: $tablet-width) {
-  //   left: 55px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   left: 0;
-  // }
 }
 
-.example__slider-image-bottom-container {
+.example__slider-image-before-container {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.example__slider-image-after-container {
+  width: 50%;
+  overflow: hidden;
 }
 
 .example__slider-image {
