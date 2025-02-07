@@ -199,18 +199,67 @@
   display: block;
 }
 
-.example__slider-toggle {
+.example__slider-control {
+  position: absolute;
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 2px);
+  padding: 0;
+  background-color: $gray-800;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.example__slider-control::before {
   position: absolute;
   top: calc(50% - 20px);
-  left: 50%;
+  left: calc(50% - 20px);
+  content: "";
   width: 40px;
   height: 40px;
-  padding: 0;
   background-color: $white;
   border: 2px solid $gray-800;
   border-radius: 50%;
-  cursor: pointer;
 }
+
+.example__slider-control::after {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 12px);
+  content: "";
+  width: 24px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#icon-arrows");
+  background-color: $gray-800;
+}
+
+.example__slider-control:hover {
+  background-color: $primary;
+}
+
+.example__slider-control:active {
+  background-color: $primary-darker;
+  opacity: 0.6;
+}
+
+.example__slider-control:hover::before {
+  border-color: $primary;
+}
+
+.example__slider-control:hover::after {
+  background-color: $primary;
+}
+
+.example__slider-control:active::before {
+  border-color: $primary-darker;
+}
+
+.example__slider-control:active::after {
+  background-color: $primary-darker;
+}
+
 
 // .example__slider-toggle:hover .slider__icon-thumb {
 //   color: $primary;
