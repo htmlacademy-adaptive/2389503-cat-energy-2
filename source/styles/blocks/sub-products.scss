@@ -190,7 +190,7 @@
 }
 
 .sub-products__gift-card {
-  @include block-color($white, $primary-lighter);
+  @include block-color($white, $primary-lighter-alpha);
   min-height: 290px;
   padding: 59px 61px 43px 58px;
   display: flex;

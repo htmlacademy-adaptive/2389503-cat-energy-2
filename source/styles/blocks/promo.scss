@@ -1,9 +1,13 @@
 .promo {
-  @include block-color($black, $primary-lighter);
+  @include block-color($black, $white);
 
-  // background-image: url("../../images/index-background-desktop-1@1x.jpg");
-  // background-repeat: no-repeat;
-  // background-position: 50% 50%;
+  background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha), url("../../images/promo-background-center.jpg@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 302px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha), url("../../images/promo-background-center.jpg@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     @include block-color();
