@@ -1,6 +1,7 @@
 .promo {
-  @include block-color($black, $white);
-
+  @include block-color($black, $primary);
+  position: relative;
+  z-index: 0;
   background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha), url("../../images/promo-background-center.jpg@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 302px;
@@ -11,14 +12,30 @@
 
   @media (min-width: $tablet-width) {
     @include block-color();
+    background-image: initial;
   }
+}
+
+.promo--background-part::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 178px;
+  background-color: $white;
+  z-index: 0;
 }
 
 .promo__container {
   @include container;
+  position: relative;
   display: grid;
   text-align: center;
   padding-top: 27px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     @include container-tablet;
