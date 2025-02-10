@@ -4,7 +4,6 @@
   z-index: 0;
   background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha), url("../../images/promo-background-center@1x.jpg");
   background-repeat: no-repeat;
-  // background-size: 100% 302px;
   background-size: contain;
   background-position: top center;
 
@@ -20,7 +19,8 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 52px;
     background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha), url("../../images/promo-background-right@1x.jpg");
-    background-position: top right;
+    background-size: contain;
+    background-position: calc(50% + 360px) top;
   }
 
   @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
