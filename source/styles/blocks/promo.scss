@@ -5,6 +5,8 @@
   background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha), url("../../images/promo-background-center.jpg@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 302px;
+  // background-size: contain;
+  // background-position: top center;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha), url("../../images/promo-background-center.jpg@2x.jpg");
