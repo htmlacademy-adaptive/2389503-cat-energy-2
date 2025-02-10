@@ -190,13 +190,18 @@
 }
 
 .sub-products__gift-card {
-  @include block-color($white, $primary-lighter-alpha);
-  min-height: 290px;
-  padding: 59px 61px 43px 58px;
+  @include block-color($white, $primary);
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-height: 290px;
+  padding: 59px 61px 43px 58px;
+  background-image: url("../../images/image-gift@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -222,6 +227,21 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 78px 80px;
+  z-index: 50;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 82px;
+  }
+}
+
+.sub-products__gift-card::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  display: block;
+  background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha);
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -234,6 +254,7 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  z-index: 50;
 
   @media (min-width: $tablet-width) {
     max-width: 161px;
