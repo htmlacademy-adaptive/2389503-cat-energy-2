@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .header--catalog-desktop {

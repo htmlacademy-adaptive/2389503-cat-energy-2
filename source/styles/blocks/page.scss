@@ -2,6 +2,14 @@
 
 // }
 
+/* Для позиционирования псевдоэлемента с фоновым изображением в блоке Promo */
+.page__body {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+
 .page__header {
   min-height: 66px;
   padding-top: 14px;
@@ -14,7 +22,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: -$header-height-desktop;
     padding-top: 55px;
     padding-bottom: 29px;
   }
