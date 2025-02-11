@@ -191,6 +191,18 @@
   }
 }
 
+.header__main-menu-item {
+  border-top: 1px solid $gray-400;
+}
+
+.header__main-menu-item:last-child {
+  border-bottom: 1px solid $gray-400;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .header__main-menu-item--active {
   position: relative;
 }
@@ -212,14 +224,6 @@
   }
 }
 
-.header__main-menu-item:last-child .header__main-menu-link {
-  border-bottom: 1px solid $gray-400;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
 .header__main-menu-link {
   @include font($secondary-font, 20px, 20px);
   @include link;
@@ -227,12 +231,10 @@
   display: block;
   min-height: 66px;
   padding: 22px 20px;
-  border-top: 1px solid $gray-400;
 
   @media (min-width: $tablet-width) {
     min-height: auto;
     padding: 0;
-    border: none;
     font-size: 18px;
     line-height: 24px;
   }
