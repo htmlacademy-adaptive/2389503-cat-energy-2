@@ -10,6 +10,23 @@
   }
 }
 
+.example--dekor-block {
+  position: relative;
+}
+
+.example--dekor-block::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    min-height: 462px;
+    background-color: $gray-100;
+  }
+}
+
 .example__container {
   @include container;
 
@@ -188,6 +205,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    background-image: linear-gradient($white 150px, $gray-100 150px);
   }
 
   @media (min-width: $desktop-width) {
@@ -202,6 +220,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    background-image: linear-gradient($white 150px, $gray-100 150px);
   }
 
   @media (min-width: $desktop-width) {
