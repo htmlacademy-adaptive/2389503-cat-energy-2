@@ -17,3 +17,16 @@
     color: $white-alpha;
   }
 }
+
+.button--secondary {
+  @include block-color($gray-900, $light);
+
+  &:hover {
+    background-color: $gray-200;
+  }
+
+  &:active {
+    background-color: $gray-200;
+    color: $gray-900;
+  }
+}
