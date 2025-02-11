@@ -7,4 +7,13 @@
   display: inline-block;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $primary-darker;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $white-alpha;
+  }
 }
