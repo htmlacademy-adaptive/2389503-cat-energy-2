@@ -9,10 +9,11 @@
 
   @media (min-width: $desktop-width) {
     position: static;
+    padding-bottom: 52px;
   }
 }
 
-.promo--background-part::before {
+.promo::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -44,7 +45,7 @@
     min-height: 694px;
     background-color: $gray-875;
     background-image: linear-gradient($primary-lighter-alpha, $primary-lighter-alpha), url("../../images/promo-background-desktop@1x.jpg"), linear-gradient($gray-875, $gray-875);
-    background-size: contain;
+    background-size: cover;
     background-position: left bottom;
   }
 
@@ -72,7 +73,7 @@
   @media (min-width: $desktop-width) {
     @include container-desktop;
     grid-template-columns: 80px 350px 100px 600px;
-    grid-template-rows: $header-height-desktop 81px auto 52px auto 132px;
+    grid-template-rows: 81px auto 52px auto 132px;
   }
 }
 
@@ -84,7 +85,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 4;
-    grid-row: 3/ 4;
+    grid-row: 2 / 3;
     margin-bottom: 0;
   }
 }
@@ -123,7 +124,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / -1;
-    grid-row: -1 / 2;
+    grid-row: -1 / 1;
   }
 }
 
@@ -148,7 +149,7 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
     align-self: start;
   }
 }
