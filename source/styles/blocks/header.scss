@@ -10,18 +10,18 @@
 
 .header--catalog-desktop {
   margin-bottom: 45px;
-}
 
-.header--catalog-desktop .header__main-menu {
-  background-color: inherit;
-}
+  .header__main-menu {
+    background-color: inherit;
+  }
 
-.header--catalog-desktop .header__main-menu-item--active::before {
-  background-color: $primary;
-}
+  .header__main-menu-item--active::before {
+    background-color: $primary;
+  }
 
-.header--catalog-desktop .header__main-menu-link {
-  color: $black;
+  .header__main-menu-link {
+    color: $black;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
