@@ -3,27 +3,11 @@
 
   @media (min-width: $tablet-width) {
     @include block-color($black, $white);
+    background-image: linear-gradient($white 617px, $gray-100 617px);
   }
 
   @media (min-width: $desktop-width) {
-    @include block-color($black, $gray-100);
-  }
-}
-
-.example--dekor-block {
-  position: relative;
-}
-
-.example--dekor-block::before {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    display: block;
-    min-height: 462px;
-    background-color: $gray-100;
+    background-image: linear-gradient($white 135px, $gray-100 135px);
   }
 }
 
@@ -74,6 +58,7 @@
     margin-bottom: 0;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    z-index: 5;
   }
 }
 
@@ -94,6 +79,7 @@
     margin-bottom: 0;
     grid-column: 1 / 2;
     grid-row: 5 / 6;
+    z-index: 5;
   }
 }
 
@@ -210,6 +196,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: $gray-100;
+    background-image: linear-gradient($white 135px, $gray-100 135px);
   }
 }
 
@@ -225,6 +212,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: $gray-100;
+    background-image: linear-gradient($white 135px, $gray-100 135px);
   }
 }
 
