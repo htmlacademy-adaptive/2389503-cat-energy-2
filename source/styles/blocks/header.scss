@@ -9,18 +9,20 @@
 }
 
 .header--catalog-desktop {
-  margin-bottom: 45px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
 
-  .header__main-menu {
-    background-color: inherit;
-  }
+    .header__main-menu {
+      background-color: inherit;
+    }
 
-  .header__main-menu-item--active::before {
-    background-color: $primary;
-  }
+    .header__main-menu-item--active::before {
+      background-color: $primary;
+    }
 
-  .header__main-menu-link {
-    color: $black;
+    .header__main-menu-link {
+      color: $black;
+    }
   }
 }
 
