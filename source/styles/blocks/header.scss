@@ -22,6 +22,14 @@
 
     .header__main-menu-link {
       color: $black;
+
+      &:hover {
+        opacity: 60%;
+      }
+
+      &:active {
+        opacity: 30%;
+      }
     }
   }
 }
