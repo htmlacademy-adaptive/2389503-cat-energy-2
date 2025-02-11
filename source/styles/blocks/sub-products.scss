@@ -190,7 +190,7 @@
 }
 
 .sub-products__gift-card {
-  @include block-color($white, $primary);
+  @include block-color($white, $gray-850);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -212,7 +212,11 @@
     justify-content: space-between;
     min-height: 200px;
     padding: 57px 125px 60px 77px;
-    background-position: center bottom -200px;
+    background-image: url("../../images/tablet-image-gift@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/tablet-image-gift@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -220,6 +224,7 @@
     width: 245px;
     min-height: 288px;
     padding: 56px 41px 43px;
+    background-image: url("../../images/image-gift@1x.png");
     background-position: -30px 0;
   }
 }
