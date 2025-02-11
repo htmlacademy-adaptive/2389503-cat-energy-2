@@ -193,10 +193,14 @@
 
 .header__main-menu-item {
   border-top: 1px solid $gray-400;
-}
 
-.header__main-menu-item:last-child {
-  border-bottom: 1px solid $gray-400;
+  &:last-child {
+    border-bottom: 1px solid $gray-400;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -232,6 +236,14 @@
   min-height: 66px;
   padding: 22px 20px;
 
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: auto;
     padding: 0;
@@ -245,3 +257,7 @@
     color: $white;
   }
 }
+
+// .header__main-menu-link:hover {
+//   opacity: 60%;
+// }
