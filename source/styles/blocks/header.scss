@@ -1,17 +1,105 @@
 .header {
   @include block-color;
+  position: relative;
+  border-bottom: 1px solid $gray-500;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
-.header__navigation-wrapper {
+.header--catalog-desktop {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+
+    .header__main-menu {
+      background-color: inherit;
+    }
+
+    .header__main-menu-item--active::before {
+      background-color: $primary;
+    }
+
+    .header__main-menu-link {
+      color: $black;
+
+      &:hover {
+        opacity: 60%;
+      }
+
+      &:active {
+        opacity: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header--nojs .header__toggle {
+    display: none;
+  }
+
+  .header--nojs .header__container {
+    display: block;
+  }
+
+  .header--nojs .header__mobile-menu {
+    margin-bottom: 14px;
+  }
+
+  .header--nojs .header__main-menu {
+    position: relative;
+    top: auto;
+    display: block;
+    margin-bottom: -14px;
+  }
+
+  /* Иконка - закрытое состояние меню */
+
+  .header__toggle--closed {
+    background-color: transparent;
+    background-image: url("../../icons/stack.svg#icon-burger");
+    background-size: 24px 24px;
+  }
+
+  /* Иконка - открытое состояние меню */
+
+  .header__toggle--opened {
+    width: 18px;
+    height: 18px;
+    background-image: url("../../icons/stack.svg#icon-close");
+    background-size: 18px 18px;
+  }
+
+  /* Открытое состояние меню */
+
+  .header__main-menu--opened {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+  }
+
+  /* состояние меню по-умолчанию */
+
+  .header__main-menu--closed {
+    display: none;
+  }
+}
+
+.header__container {
   @include container;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     @include container-tablet;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,22 +107,36 @@
   }
 }
 
-.header__mobile-wrapper {
+.header__mobile-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  width: 100%;
 
-.header__logo {
-  text-decoration: none;
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 5;
+  }
 }
 
 .header__logo-link {
   color: $darker;
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }
 
 .header__logo-link:hover {
@@ -49,13 +151,20 @@
   display: block;
 }
 
-.header__button {
+.header__logo-text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+/* Переключатель */
+
+.header__toggle {
   width: 24px;
   height: 24px;
   padding: 0;
-  background-color: transparent;
-  background-image: url("../../icons/stack.svg#icon-burger");
-  background-size: 24px 24px;
+  background-color: inherit;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
@@ -66,50 +175,97 @@
   }
 }
 
-/* Фоновая иконка бургера сменяется на иконку крестика  на кнопке при добавлении этого класса */
-.header__button--mobile-close {
-  width: 18px;
-  height: 18px;
-  background-image: url("../../icons/stack.svg#icon-close");
-  background-size: 18px 18px;
-}
+/* Выпадающее меню */
 
-.header__navigation {
-  display: none;
-  position: relative;
+.header__main-menu {
+  @include block-color;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+    background-color: transparent;
   }
 }
 
-/* Выпадающий список навигации в шапке отображается при добалении этого коласса */
-.header__navigation-show {
-  display: block;
-}
-
-.header__navigation-list {
+.header__main-menu-list {
   @include list-style-reset;
-  position: absolute;
-  top: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    position: static;
-    flex-direction: row;
-    max-width: 500px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 550px;
-    justify-content: flex-end;
+    flex-flow: row wrap;
+    gap: 32px;
   }
 }
 
-.header__navigation-link {
+.header__main-menu-item {
+  border-top: 1px solid $gray-400;
+
+  &:last-child {
+    border-bottom: 1px solid $gray-400;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.header__main-menu-item--active {
+  position: relative;
+}
+
+.header__main-menu-item--active::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
+.header__main-menu-link {
   @include font($secondary-font, 20px, 20px);
   @include link;
+
+  display: block;
+  min-height: 66px;
+  padding: 22px 20px;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+  }
 }

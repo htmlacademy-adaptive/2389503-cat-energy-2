@@ -2,21 +2,47 @@
 
 // }
 
+/* Для позиционирования псевдоэлемента с фоновым изображением в блоке Promo */
+.page__body {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+
 .page__header {
+  min-height: 66px;
   padding-top: 14px;
-  margin-bottom: 14px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     padding-top: 26px;
+    padding-bottom: 0;
     margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 56px;
-    margin-bottom: 74px;
+    margin-bottom: 0;
+    padding-top: 55px;
+    padding-bottom: 29px;
   }
 }
 
+.page__promo {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.page__programms {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
 
 .page__catalog {
   margin-bottom: 25px;
@@ -27,6 +53,22 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
+  }
+}
+
+.page__features {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+    margin-bottom: 0;
+    border-bottom: 1px solid $gray-400;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -45,21 +87,6 @@
   }
 }
 
-.page__footer {
-  padding-top: 20px;
-  padding-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 55px;
-    padding-bottom: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 66px;
-    padding-bottom: 66px;
-  }
-}
-
 .page__subscribe {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -72,5 +99,20 @@
   @media (min-width: $desktop-width) {
     padding-top: 96px;
     padding-bottom: 104px;
+  }
+}
+
+.page__footer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 }

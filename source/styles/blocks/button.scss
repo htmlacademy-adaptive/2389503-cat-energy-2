@@ -7,4 +7,26 @@
   display: inline-block;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $primary-darker;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $white-alpha;
+  }
+}
+
+.button--secondary {
+  @include block-color($gray-900, $light);
+
+  &:hover {
+    background-color: $gray-200;
+  }
+
+  &:active {
+    background-color: $gray-200;
+    color: $gray-900;
+  }
 }
