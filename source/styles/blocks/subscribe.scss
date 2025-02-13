@@ -1,6 +1,6 @@
-// .subscribe {
-
-// }
+.subscribe {
+  overflow: hidden;
+}
 
 .subscribe__container {
   @include container;
@@ -16,8 +16,12 @@
 
 .subscribe__title {
   @include font($secondary-font, 24px, 24px);
+  position: relative;
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 32px;
+  padding-right: 40px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
@@ -28,22 +32,49 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 72px;
-    padding-left: 0;
+    margin-left: -40px;
     font-size: 40px;
     line-height: 40px;
   }
 }
 
+.subscribe__title::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    width: 800%;
+    height: 2px;
+    background-color: $primary;
+    z-index: -1;
+  }
+}
+
+.subscribe__title::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 800%;
+  height: 2px;
+  background-color: $primary;
+  z-index: -1;
+}
+
+
 .subscribe__wrapper {
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    max-width: 632px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 38px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 752px;
+    width: 100%;
+    padding-right: 234px;
+    padding-left: 234px;
   }
 }
 
@@ -70,11 +101,39 @@
 }
 
 .subscribe__field {
-  flex-grow: 1;
+  @include font($secondary-font, 20px, 30px, $gray-900);
+  padding: 12px 13px;
+  background-color: $white;
+  border: 1px solid $gray-300;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.subscribe__field:hover {
+  border-color: $gray-700;
+}
+
+.subscribe__field:focus {
+  outline: 2px solid $gray-900;
+  outline-offset: -2px;
+  border-color: $gray-900;
+}
+
+.subscribe__field:invalid {
+  box-shadow: none;
+}
+
+.subscribe__field:focus:invalid {
+  outline-color: $invalid;
+  border-color: $invalid;
 }
 
 .subscribe__button {
   @include font($secondary-font, 20px, 26px, $white);
+  padding: 15px;
 
   @media (min-width: $tablet-width) {
     width: 256px;

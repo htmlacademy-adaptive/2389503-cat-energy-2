@@ -3,10 +3,11 @@
 
   @media (min-width: $tablet-width) {
     @include block-color($black, $white);
+    background-image: linear-gradient($white 617px, $gray-100 617px);
   }
 
   @media (min-width: $desktop-width) {
-    @include block-color($black, $gray-100);
+    background-image: linear-gradient($white 135px, $gray-100 135px);
   }
 }
 
@@ -95,15 +96,17 @@
   display: flex;
   flex-direction: column;
   width: 124px;
+  min-height: 56px;
   margin: 0;
-  padding: 14px 19px 0;
+  padding: 13px 19px 0;
   border: 1px solid $gray-700;
   border-radius: 3px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    padding: 15px 15px 0;
+    min-height: 72px;
+    padding: 15px 9px 0;
   }
 }
 
@@ -119,20 +122,24 @@
 .example__module-desc {
   @include font($primary-font, 12px, 12px, $gray-900);
   position: relative;
-  top: 16px;
+  top: 17px;
+  align-self: center;
+  margin-top: -7px;
+  padding-right: 14px;
+  padding-left: 14px;
   background-color: $gray-100;
-  border: 2px solid $gray-100;
 
   @media (min-width: $tablet-width) {
     @include font($primary-font, 14px, 14px, $gray-900);
-    top: 9px;
+    top: 10px;
+    margin-top: 0;
+    padding-right: 9px;
+    padding-left: 8px;
     background-color: $white;
-    border-color: $white;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $gray-100;
-    border-color: $gray-100;
   }
 }
 
@@ -157,8 +164,6 @@
 }
 
 .example__slider {
-  position: relative;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
@@ -170,17 +175,41 @@
   }
 }
 
-.example__slider-image-wrapper {
+.example__slider-wrapper {
+  position: relative;
+}
+
+.example__slider-image-before-container {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+  width: 50%;
+  background-color: $gray-100;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    left: 55px;
+    background-color: $white;
+    background-image: linear-gradient($white 150px, $gray-100 150px);
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
+    background-color: $gray-100;
+    background-image: linear-gradient($white 135px, $gray-100 135px);
+  }
+}
+
+.example__slider-image-after-container {
+  width: 100%;
+  background-color: $gray-100;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    background-image: linear-gradient($white 150px, $gray-100 150px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-100;
+    background-image: linear-gradient($white 135px, $gray-100 135px);
   }
 }
 
@@ -188,25 +217,62 @@
   display: block;
 }
 
-.example__slider-button {
+.example__slider-control {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 2px);
   padding: 0;
-  color: $gray-800;
-  background-color: transparent;
+  background-color: $gray-800;
   border: none;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.example__slider-button:hover .slider__icon-thumb {
-  color: $primary;
+.example__slider-control::before {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  border: 2px solid $gray-800;
+  border-radius: 50%;
 }
 
-.example__slider-button:focus .slider__icon-thumb {
-  color: $primary;
+.example__slider-control::after {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 12px);
+  content: "";
+  width: 24px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#icon-arrows");
+  background-color: $gray-800;
 }
 
-.example__slider-button:active .slider__icon-thumb {
-  color: $primary-darker;
-  opacity: 0.6;
+.example__slider-control:hover {
+  background-color: $primary;
+}
+
+.example__slider-control:active {
+  background-color: $primary-darker-alpha;
+}
+
+.example__slider-control:hover::before {
+  border-color: $primary;
+}
+
+.example__slider-control:hover::after {
+  background-color: $primary;
+}
+
+.example__slider-control:active::before {
+  border-color: $primary-darker-alpha;
+}
+
+.example__slider-control:active::after {
+  background-color: $primary-darker-alpha;
 }

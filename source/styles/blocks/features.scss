@@ -14,22 +14,46 @@
   }
 }
 
+.features__title {
+  @include font($secondary-font, 36px, 40px);
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+}
+
 .features__list {
   @include list-style-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
+    flex-flow: row wrap;
     justify-content: space-between;
+    counter-reset: new-counter;
   }
 }
 
 .features__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
   @media (min-width: $tablet-width) {
+    flex-flow: column wrap;
+    gap: 31px;
     max-width: 250px;
+    min-height: 280px;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    counter-increment: new-counter;
   }
 }
 
@@ -42,6 +66,23 @@
   background-size: 30px 32px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.features__item::after {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 280px, 280px, $light);
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: counter(new-counter);
+    display: block;
+    z-index: -1;
+  }
 }
 
 .features__item--leaf::before {
@@ -60,10 +101,14 @@
   background-image: url("../../icons/stack.svg#icon-clock");
 }
 
-.features__title {
-  @include font($secondary-font, 36px, 40px);
-}
-
 .features__desc {
   @include font($primary-font, 14px, 18px, $gray-900);
+  max-width: 200px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
