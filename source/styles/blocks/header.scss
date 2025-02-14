@@ -97,12 +97,13 @@
 .header__container {
   @include container;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     @include container-tablet;
-    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 94px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,6 +120,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    align-self: flex-start;
     width: auto;
   }
 
@@ -187,6 +189,7 @@
 
   @media (min-width: $tablet-width) {
     width: 436px;
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -203,7 +206,7 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    gap: 32px;
+    gap: 33px;
   }
 }
 
@@ -230,7 +233,7 @@
 .header__main-menu-item--active::before {
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: -6px;
+    bottom: -10px;
     left: 0;
     right: 0;
     content: "";
