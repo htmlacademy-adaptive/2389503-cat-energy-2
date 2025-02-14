@@ -160,7 +160,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    gap: 62px;
+    gap: 66px;
   }
 }
 
@@ -171,6 +171,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }
