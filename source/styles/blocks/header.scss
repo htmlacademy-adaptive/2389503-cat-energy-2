@@ -35,6 +35,10 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
 
+    .header__logo-text {
+      margin-top: 19px;
+    }
+
     .header__main-menu {
       background-color: inherit;
     }
