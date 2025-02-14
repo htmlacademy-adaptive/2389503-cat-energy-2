@@ -1,6 +1,14 @@
-// .socials {
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  gap: 24px;
 
-// }
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .socials__item {
   width: 28px;
   height: 22px;

@@ -35,8 +35,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 36px 139px;
     counter-reset: new-counter;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
@@ -89,6 +95,12 @@
   background-image: url("../../icons/stack.svg#icon-leaf");
 }
 
+.features__item--leaf::after {
+  @media (min-width: $tablet-width) {
+    right: 21px;
+  }
+}
+
 .features__item--powder::before {
   background-image: url("../../icons/stack.svg#icon-powder");
 }
@@ -100,6 +112,13 @@
 .features__item--clock::before {
   background-image: url("../../icons/stack.svg#icon-clock");
 }
+
+.features__item--clock::after {
+  @media (min-width: $tablet-width) {
+    right: -4px;
+  }
+}
+
 
 .features__desc {
   @include font($primary-font, 14px, 18px, $gray-900);

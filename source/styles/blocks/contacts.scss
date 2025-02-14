@@ -30,7 +30,6 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    max-width: 628px;
     padding: 60px 40px;
   }
 
@@ -41,7 +40,7 @@
     z-index: 100;
     width: 565px;
     padding-left: 80px;
-    padding-right: 78px;
+    padding-right: 72px;
     background-color: $white;
   }
 }
@@ -67,6 +66,10 @@
     @include font($primary-font, 16px, 20px, $gray-900);
     width: 163px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
