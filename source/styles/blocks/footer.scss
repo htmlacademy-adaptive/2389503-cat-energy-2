@@ -32,6 +32,10 @@
     padding: 0;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
 }
 
 .footer__logo-link:hover .footer__logo-text {
@@ -79,6 +83,10 @@
     padding-bottom: 1.5px;
     padding-left: 5px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
   }
 }
 
