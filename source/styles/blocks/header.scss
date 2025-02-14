@@ -269,3 +269,43 @@
     color: $white;
   }
 }
+
+.header__navigation {
+  display: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+/* Выпадающий список навигации в шапке отображается при добалении этого коласса */
+.header__navigation-show {
+  display: block;
+}
+
+.header__navigation-list {
+  @include list-style-reset;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    flex-direction: row;
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 550px;
+    justify-content: flex-end;
+  }
+}
+
+.header__navigation-link {
+  @include font($secondary-font, 20px, 20px);
+  @include link;
+}
