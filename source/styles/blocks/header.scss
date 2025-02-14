@@ -26,6 +26,12 @@
     margin-top: 12px;
   }
 
+  @media (min-width: $tablet-width) {
+    .header__logo-text {
+      margin-top: 14px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
 

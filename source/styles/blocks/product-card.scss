@@ -161,10 +161,10 @@
   align-self: flex-end;
 
   @media (min-width: $tablet-width) {
-    gap: 82px;
+    gap: 81px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     gap: 90px;
   }
 }
@@ -184,7 +184,7 @@
     left: calc(50% - 30px);
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     top: -70px;
   }
 }
@@ -205,7 +205,7 @@
     left: calc(50% - 30px);
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     top: -70px;
   }
 }
