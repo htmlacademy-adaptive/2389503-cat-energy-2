@@ -60,7 +60,7 @@
 .programms__card::before {
   position: absolute;
   top: 24px;
-  left: 21px;
+  left: 20px;
   content: "";
   width: 50px;
   height: 50px;
@@ -85,8 +85,8 @@
 }
 
 .programms__card--cat-slim::after {
-  top: 17px;
-  left: 19px;
+  top: 19px;
+  left: 20px;
   width: 50px;
   height: 53px;
   background-image: url("../../icons/stack.svg#icon-cat-slim");
@@ -112,8 +112,8 @@
 }
 
 .programms__card--cat-pro::after {
-  top: 25px;
-  left: 11px;
+  top: 24px;
+  left: 12px;
   width: 67px;
   height: 50px;
   background-image: url("../../icons/stack.svg#icon-cat-pro");
@@ -196,11 +196,11 @@
   @include font($secondary-font, 16px, 16px);
   @include link;
   display: inline-block;
-  padding: 4px 47px 4px 0;
+  padding: 4px 49px 4px 0;
   background-image: url("../../icons/stack.svg#icon-arrow-short");
   background-repeat: no-repeat;
   background-size: 24px 12px;
-  background-position: 95px center;
+  background-position: 102px center;
 
   @media (min-width: $tablet-width) {
     padding-right: 57px;
