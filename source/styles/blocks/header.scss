@@ -12,8 +12,18 @@
 }
 
 .header--catalog-desktop {
-  @media (min-width: $mobile-width-only) {
-    border-bottom: 1px solid $gray-500;
+  border-bottom: 1px solid $gray-500;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  .header__logo-link {
+    align-items: flex-start;
+  }
+
+  .header__logo-text {
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
