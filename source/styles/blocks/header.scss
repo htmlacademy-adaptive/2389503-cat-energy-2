@@ -1,7 +1,6 @@
 .header {
   @include block-color;
   position: relative;
-  border-bottom: 1px solid $gray-500;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -13,6 +12,10 @@
 }
 
 .header--catalog-desktop {
+  @media (min-width: $mobile-width-only) {
+    border-bottom: 1px solid $gray-500;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
 
@@ -112,6 +115,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-right: 1px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
