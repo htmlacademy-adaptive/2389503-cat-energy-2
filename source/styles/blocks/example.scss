@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     @include block-color($black, $white);
-    background-image: linear-gradient($white 617px, $gray-100 617px);
+    background-image: linear-gradient($white 619px, $gray-100 619px);
   }
 
   @media (min-width: $desktop-width) {
@@ -189,7 +189,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    background-image: linear-gradient($white 150px, $gray-100 150px);
+    background-image: linear-gradient($white 152px, $gray-100 152px);
   }
 
   @media (min-width: $desktop-width) {
@@ -205,7 +205,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    background-image: linear-gradient($white 150px, $gray-100 150px);
+    background-image: linear-gradient($white 152px, $gray-100 152px);
   }
 
   @media (min-width: $desktop-width) {
