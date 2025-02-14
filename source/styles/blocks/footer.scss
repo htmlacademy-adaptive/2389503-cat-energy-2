@@ -22,8 +22,8 @@
 
 .footer__logo-link {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   border-bottom: 1px solid $gray-500;
   color: $darker;
   text-decoration: none;
@@ -54,7 +54,7 @@
   @include list-style-reset;
 
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 
 .socials {
