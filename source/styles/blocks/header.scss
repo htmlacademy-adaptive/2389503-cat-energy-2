@@ -108,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
+    justify-content: space-between;
   }
 }
 
@@ -194,6 +195,7 @@
 
   @media (min-width: $desktop-width) {
     width: 475px;
+    margin-top: 15px;
     background-color: transparent;
   }
 }
@@ -207,6 +209,10 @@
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
     gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 32px;
   }
 }
 
