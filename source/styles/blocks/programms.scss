@@ -194,21 +194,9 @@
 }
 
 .programms__link {
-  @include font($secondary-font, 16px, 16px);
   @include link;
   display: inline-flex;
   padding: 4px 4px 4px 0;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 57px;
-    background-position: 130px center;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-right: 60px;
-  }
 }
 
 .programms__link:active {
@@ -237,4 +225,13 @@
 .programms__link:focus::after {
   background-image: url("../../icons/stack.svg#icon-arrow-long");
   background-size: 32px 12px;
+}
+
+.programms__link-text {
+  @include font($secondary-font, 16px, 16px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
