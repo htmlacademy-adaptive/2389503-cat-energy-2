@@ -196,12 +196,8 @@
 .programms__link {
   @include font($secondary-font, 16px, 16px);
   @include link;
-  display: inline-block;
-  padding: 4px 49px 4px 0;
-  background-image: url("../../icons/stack.svg#icon-arrow-short");
-  background-repeat: no-repeat;
-  background-size: 24px 12px;
-  background-position: 102px center;
+  display: inline-flex;
+  padding: 4px 4px 4px 0;
 
   @media (min-width: $tablet-width) {
     padding-right: 57px;
@@ -215,16 +211,30 @@
   }
 }
 
-.programms__link:hover {
-  background-image: url("../../icons/stack.svg#icon-arrow-long");
-  background-size: 32px 12px;
-}
-
-.programms__link:focus {
-  background-image: url("../../icons/stack.svg#icon-arrow-long");
-  background-size: 32px 12px;
-}
-
 .programms__link:active {
   opacity: 0.3;
+}
+
+.programms__link::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  margin-left: 16px;
+  background-image: url("../../icons/stack.svg#icon-arrow-short");
+  background-repeat: no-repeat;
+  background-size: 24px 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 26px;
+    margin-top: 8px;
+  }
+}
+
+.programms__link:hover::after,
+.programms__link:focus::after {
+  background-image: url("../../icons/stack.svg#icon-arrow-long");
+  background-size: 32px 12px;
 }
