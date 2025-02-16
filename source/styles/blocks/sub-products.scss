@@ -226,6 +226,10 @@
     padding: 56px 41px 43px;
     background-image: url("../../images/image-gift@1x.png");
     background-position: -30px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-gift@2x.png");
+    }
   }
 }
 
