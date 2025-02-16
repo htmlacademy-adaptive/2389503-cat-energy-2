@@ -9,6 +9,25 @@
     background-color: $white;
   }
 }
+/* интерактивная карта без JavaScript показывает статичную картинку с картой. */
+
+.contacts--nojs {
+  .contacts__location-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $light;
+  }
+
+  .contacts__location-img {
+    display: block;
+  }
+
+  .contacts__map {
+    display: none;
+  }
+}
 
 .contacts__container {
   @include container;
@@ -95,6 +114,10 @@
   @media (min-width: $tablet-width) {
     min-height: 400px;
   }
+}
+
+.contacts__location-img-container {
+  display: none;
 }
 
 .contacts__map {
