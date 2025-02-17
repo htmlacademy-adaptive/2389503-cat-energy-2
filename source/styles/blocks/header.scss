@@ -102,7 +102,7 @@
 
   .header__main-menu--opened {
     position: absolute;
-    top: 66px;
+    top: 65px;
     left: 0;
     width: 100%;
   }
@@ -253,7 +253,9 @@
 }
 
 .header__main-menu-item--active {
-  position: relative;
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .header__main-menu-item--active::before {
