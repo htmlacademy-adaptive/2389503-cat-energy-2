@@ -175,7 +175,7 @@
 }
 
 .product-card--all .product-card__container {
-  gap: 19px;
+  gap: 20px;
   align-self: flex-end;
 
   @media (min-width: $tablet-width) {
@@ -189,7 +189,7 @@
 
 .product-card--all .product-card__container::before {
   position: absolute;
-  top: -38px;
+  top: -40px;
   left: calc(50% - 15px);
   content: " ";
   width: 30px;
@@ -209,7 +209,7 @@
 
 .product-card--all .product-card__container::after {
   position: absolute;
-  top: -38px;
+  top: -40px;
   left: calc(50% - 15px);
   content: " ";
   width: 30px;
