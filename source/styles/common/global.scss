@@ -4,9 +4,3 @@
 *::after {
   box-sizing: border-box;
 }
-
-body {
-  @include font;
-  @include block-color;
-  margin: 0;
-}

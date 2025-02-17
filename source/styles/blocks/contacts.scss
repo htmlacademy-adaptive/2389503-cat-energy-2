@@ -10,6 +10,25 @@
   }
 }
 
+/* интерактивная карта без JavaScript показывает статичную картинку с картой. */
+
+.contacts--nojs {
+  .contacts__location-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light;
+  }
+
+  .contacts__location-img {
+    display: block;
+  }
+
+  .contacts__map {
+    display: none;
+  }
+}
+
 .contacts__container {
   @include container;
 
@@ -17,7 +36,7 @@
     @include container-tablet;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     @include container-desktop;
     position: relative;
   }
@@ -95,6 +114,10 @@
   @media (min-width: $tablet-width) {
     min-height: 400px;
   }
+}
+
+.contacts__location-img-container {
+  display: none;
 }
 
 .contacts__map {

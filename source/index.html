@@ -11,6 +11,8 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <title>CAT ENERGY: интернет магазин питания для котов</title>
   <script src="scripts/index.js" defer></script>
 </head>
@@ -61,6 +63,9 @@
         </div>
         <div class="promo__image-wrapper">
           <picture>
+            <source width="552" height="499" type="image/webP" media="(min-width: 1440px)" srcset="images/index-can@1x.webp 1x, images/index-can@2x.webp 2x">
+            <source width="709" height="609" type="image/webP" media="(min-width: 768px)" srcset="images/index-can-tablet-1@1x.webp 1x, images/index-can-tablet-1@2x.webp 2x">
+            <source width="280" height="270" type="image/webP" srcset="images/index-can-mobile-1@1x.webp 1x, images/index-can-mobile-1@2x.webp 2x">
             <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can@1x.png 1x, images/index-can@2x.png 2x">
             <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet-1@1x.png 1x, images/index-can-tablet-1@2x.png 2x">
             <img class="promo__image" src="images/index-can-mobile-1@1x.png" srcset="images/index-can-mobile-1@2x.png 2x" width="280" height="270" alt="Банка с едой Кэт энерджи Про с курицей и весом 500 грамм">
@@ -76,12 +81,12 @@
           <li class="programms__card programms__card--cat-slim">
             <h3 class="programms__title">Похудение</h3>
             <p class="programms__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programms__link" href="#">Каталог slim</a>
+            <a class="programms__link" href="#"><span class="programms__link-text">Каталог slim</span></a>
           </li>
           <li class="programms__card programms__card--cat-pro">
             <h3 class="programms__title">Набор массы</h3>
             <p class="programms__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programms__link" href="#">Каталог pro</a>
+            <a class="programms__link" href="#"><span class="programms__link-text">Каталог pro</span></a>
           </li>
         </ul>
       </div>
@@ -129,13 +134,17 @@
           <div class="example__slider-wrapper">
             <div class="example__slider-image-before-container">
               <picture>
-                <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+                <source width="560" height="512" type="image/webP" media="(min-width: 768px)" srcset="images/tablet-before@1x.webp 1x, images/tablet-before@2x.webp 2x">
+                <source width="280" height="256" type="image/webP" srcset="images/mobile-before@1x.webp 1x, images/mobile-before@2x.webp 2x ">
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
                 <img class="example__slider-image" src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" width="280" height="256" alt="Жирный кот">
               </picture>
             </div>
             <div class="example__slider-image-after-container">
               <picture>
-                <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+                <source width="560" height="512" type="image/webP" media="(min-width: 768px)" srcset="images/tablet-after@1x.webp 1x, images/tablet-after@2x.webp 2x">
+                <source width="280" height="256" type="image/webP" srcset="images/mobile-after@1x.webp 1x, images/mobile-after@2x.webp 2x ">
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
                 <img class="example__slider-image" src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" width="280" height="256" alt="Стройный кот">
               </picture>
             </div>
@@ -146,6 +155,7 @@
         </div>
       </div>
     </section>
+    <!-- contacts- -nojs - интерактивная карта без JavaScript показывает статичную картинку с картой. -->
     <section class="page__contacts contacts">
       <div class="contacts__container">
         <h2 class="visually-hidden">Контактная информация</h2>
@@ -157,7 +167,17 @@
           </address>
         </div>
       </div>
-      <div class="contacts__location">
+      <div class="contacts__location ">
+        <div class="contacts__location-img-container">
+          <picture>
+            <source width="1440" height="400" type="image/webP" media="(min-width: 1440px)" srcset="images/location-nojs-desktop@1x.webp 1x, images/location-nojs-desktop@2x.webp 2x">
+            <source width="768" height="400" type="image/webP" media="(min-width: 768px)" srcset="images/location-nojs-tablet@1x.webp 1x, images/location-nojs-tablet@2x.webp 2x">
+            <source width="320" height="362" type="image/webP" srcset="images/location-nojs-mobile@1x.webp 1x, images/location-nojs-mobile@2x.webp 2x">
+            <source type="image/png" width="1440" height="400" media="(min-width: 1440px)" srcset="images/location-nojs-desktop@1x.png 1x, images/location-nojs-desktop@2x.png 2x">
+            <source type="image/png" width="768" height="400" media="(min-width: 768px)" srcset="images/location-nojs-tablet@1x.png 1x, images/location-nojs-tablet@2x.png 2x">
+            <img class="contacts__location-img" src="images/location-nojs-mobile@1x.png" srcset="images/location-nojs-mobile@2x.png 2x" width="320" height="362" alt="Офис компании по адресу ул. Большая Конюшенная,д. 19/8, Санкт-Петербург ">
+          </picture>
+        </div>
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018932052187!2d30.322001543851233!3d59.93871649586165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1738828093282!5m2!1sru!2sru" width="320" height="362" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная,д. 19/8, Санкт-Петербург"></iframe>
       </div>
     </section>
